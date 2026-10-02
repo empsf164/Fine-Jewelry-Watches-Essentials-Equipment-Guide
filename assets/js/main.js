@@ -58,8 +58,12 @@ function initMobileNavigation() {
 
   // Mobile Accordion Toggles
   document.querySelectorAll('.mobile-accordion-toggle').forEach(toggle => {
-    toggle.addEventListener('click', () => {
+    toggle.addEventListener('click', (e) => {
       const content = toggle.nextElementSibling;
+      if (!content || !content.classList.contains('mobile-accordion-content')) {
+        return; // Allow standard link click through
+      }
+      e.preventDefault();
       const isOpen = content.classList.contains('open');
 
       // Close other open accordions

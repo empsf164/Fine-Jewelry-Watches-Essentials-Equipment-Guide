@@ -354,19 +354,25 @@ button, input, select, textarea {
 }
 
 /* Badges & Tags */
-.badge {
+.badge,
+.card-tag,
+.tag {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.25rem 0.65rem;
-  font-size: 0.7rem;
+  gap: 0.3rem;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.625rem;
   font-weight: 500;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   border-radius: var(--radius-xs);
   background: var(--bg-tertiary);
   color: var(--text-secondary);
   border: 1px solid var(--border-subtle);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
 }
 
 .badge-gold {

@@ -234,9 +234,9 @@ const AURELLE_FILTERS = (function () {
             </div>
           </div>
           <div class="card-content">
-            <div class="flex-between items-center" style="margin-bottom: 0.4rem;">
-              <span class="card-category">${item.category} · ${item.subcategory || 'Reference'}</span>
-              <span class="badge ${item.badge === 'Rare Gem' || item.badge === 'Masterpiece' ? 'badge-gold' : ''}">${item.badge || 'Essential'}</span>
+            <div class="flex-between items-center" style="margin-bottom: 0.45rem; gap: 0.5rem; flex-wrap: nowrap;">
+              <span class="card-category" style="font-size: 0.625rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 65%;">${item.category} · ${item.subcategory || 'Reference'}</span>
+              <span class="badge ${item.badge === 'Rare Gem' || item.badge === 'Masterpiece' ? 'badge-gold' : ''}" style="font-size: 0.625rem; white-space: nowrap; flex-shrink: 0;">${item.badge || 'Essential'}</span>
             </div>
             <h3 class="card-title"><a href="details.html?id=${item.id}&type=${item.sectionType}">${item.title}</a></h3>
             <p class="card-desc">${item.tagline || item.overview}</p>

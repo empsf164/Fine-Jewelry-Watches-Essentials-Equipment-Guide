@@ -37,6 +37,13 @@
     display: none; /* Switch to Mobile Drawer */
   }
 
+  /* Remove header signup button in all mobile, tab, and 1024px views */
+  .site-header .auth-nav-container,
+  .navbar-container .auth-nav-container,
+  .nav-actions .auth-nav-container {
+    display: none !important;
+  }
+
   .hamburger-btn {
     display: flex;
   }

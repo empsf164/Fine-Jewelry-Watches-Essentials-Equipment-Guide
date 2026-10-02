@@ -114,7 +114,6 @@ const AURELLE_AUTH = (function () {
         `;
       } else {
         container.innerHTML = `
-          <a href="login.html" class="nav-link">Sign In</a>
           <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
         `;
       }

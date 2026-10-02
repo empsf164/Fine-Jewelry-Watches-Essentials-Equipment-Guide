@@ -27,7 +27,7 @@
   }
 }
 
-/* Tablets (<= 1024px) */
+/* Tablets & 1024px Views (601px to 1024px) */
 @media (max-width: 1024px) {
   :root {
     --nav-height: 70px;
@@ -39,14 +39,6 @@
 
   .hamburger-btn {
     display: flex;
-  }
-
-  .grid-4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .grid-3 {
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .details-hero-grid {
@@ -84,16 +76,57 @@
   }
 }
 
-/* Small Tablets & Large Phones (<= 768px) */
-@media (max-width: 768px) {
+/* Tablet Card Grid Alignment (601px - 1024px): 2 cards per row & last odd card centered */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .catalog-grid,
+  .guides-grid,
+  .editorial-grid,
+  .discover-grid,
+  #discover-grid,
+  .saved-pane .grid,
+  .section .grid-2,
+  .section .grid-3,
+  .section .grid-4 {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 2rem !important;
+    justify-content: center !important;
+  }
+
+  /* Center the last odd-numbered card across both columns */
+  .grid-2 > :last-child:nth-child(odd),
+  .grid-3 > :last-child:nth-child(odd),
+  .grid-4 > :last-child:nth-child(odd),
+  .catalog-grid > :last-child:nth-child(odd),
+  .guides-grid > :last-child:nth-child(odd),
+  .editorial-grid > :last-child:nth-child(odd),
+  .discover-grid > :last-child:nth-child(odd),
+  #discover-grid > :last-child:nth-child(odd),
+  .saved-pane .grid > :last-child:nth-child(odd),
+  .section .grid-2 > :last-child:nth-child(odd),
+  .section .grid-3 > :last-child:nth-child(odd),
+  .section .grid-4 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1 !important;
+    max-width: 540px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+}
+
+/* Mobile Phones (<= 600px) */
+@media (max-width: 600px) {
   .section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
   }
 
   .section-sm {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .container {
@@ -103,9 +136,13 @@
 
   .grid-2,
   .grid-3,
-  .grid-4 {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+  .grid-4,
+  #discover-grid,
+  .discover-grid,
+  .guides-grid,
+  .saved-pane .grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
   }
 
   .brand-logo {

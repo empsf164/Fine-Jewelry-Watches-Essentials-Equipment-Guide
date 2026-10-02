@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editorial Guides & Journal — AURELLE</title>
   <meta name="description" content="In-depth horological analyses, gemstone buying considerations, metallurgy deconstructions, and restoration knowledge.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
   
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/components.css">
@@ -43,7 +44,7 @@
           <div class="dropdown-menu dropdown-wide">
             <a href="discover.html?cat=mechanical" class="dropdown-item"><span class="dropdown-item-title">Mechanical</span><span class="dropdown-item-desc">Hand-wound</span></a>
             <a href="discover.html?cat=automatic" class="dropdown-item"><span class="dropdown-item-title">Automatic</span><span class="dropdown-item-desc">Self-winding rotor</span></a>
-            <a href="discover.html?cat=quartz" class="dropdown-item"><span class="dropdown-item-title">Quartz</span><span class="dropdown-item-desc">High precision</span></a>
+            <a href="quartz" class="dropdown-item"><span class="dropdown-item-title">Quartz</span><span class="dropdown-item-desc">High precision</span></a>
             <a href="discover.html?cat=dress-watches" class="dropdown-item"><span class="dropdown-item-title">Dress Watches</span><span class="dropdown-item-desc">Ultra-thin formal</span></a>
             <a href="discover.html?cat=dive-watches" class="dropdown-item"><span class="dropdown-item-title">Dive Watches</span><span class="dropdown-item-desc">300M+ water seals</span></a>
             <a href="discover.html?cat=chronographs" class="dropdown-item"><span class="dropdown-item-title">Chronographs</span><span class="dropdown-item-desc">Column-wheel timers</span></a>
@@ -62,7 +63,6 @@
         <button class="search-open-btn" aria-label="Open Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
         <button class="theme-toggle-btn" aria-label="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
         <div class="auth-nav-container flex items-center gap-1">
-          <a href="login.html" class="nav-link">Sign In</a>
           <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
         </div>
         <button class="hamburger-btn" aria-label="Open Mobile Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
@@ -122,82 +122,156 @@
       </article>
 
       <!-- Category Filter Tabs for Guides -->
-      <div style="display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 1rem; margin-bottom: 3rem; border-bottom: 1px solid var(--border-subtle);">
+      <div style="display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 1rem; margin-bottom: 3rem; border-bottom: 1px solid var(--border-subtle); justify-content: center; flex-wrap: wrap;">
         <button class="btn btn-sm btn-outline active">All Categories</button>
         <button class="btn btn-sm btn-outline">Watches</button>
         <button class="btn btn-sm btn-outline">Materials & Alloys</button>
         <button class="btn btn-sm btn-outline">Gemstones</button>
         <button class="btn btn-sm btn-outline">Care & Tools</button>
-        <button class="btn btn-sm btn-outline">Collecting</button>
+        <button class="btn btn-sm btn-outline">Provenance & Hallmarks</button>
       </div>
 
-      <!-- Library Grid -->
-      <div class="grid grid-3" style="gap: 2.5rem;">
-        
-        <!-- Guide 2 -->
-        <article class="editorial-card">
-          <div class="card-media">
-            <img src="assets/images/hero-jewelry-ring.jpg" alt="18K vs Platinum">
-            <div class="card-actions-float">
-              <button class="btn-icon" data-bookmark-id="guide-18k-vs-14k-platinum" data-bookmark-type="guides" data-bookmark-title="Precious Metals Deconstructed">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-              </button>
-            </div>
+      <!-- SECTION 1: FOUNDATIONAL TECHNICAL ESSAYS -->
+      <div style="margin-bottom: 4.5rem;">
+        <div class="flex-between items-center" style="margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-accent); padding-bottom: 0.75rem;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.2rem;">Curated Curriculum</span>
+            <h2 style="font-size: 1.85rem;">Foundational Technical Treatises</h2>
           </div>
-          <div class="card-content">
-            <span class="card-category">Materials · 9 min read</span>
-            <h3 class="card-title"><a href="guide-details.html?id=guide-18k-vs-14k-platinum">Precious Metals: 18K vs 14K vs Platinum 950</a></h3>
-            <p class="card-desc">A deep comparative study of alloy chemistry, weight density, scratch resilience, and heirloom patina formation.</p>
-            <div class="card-footer">
-              <span style="font-size: 0.775rem; color: var(--text-muted);">Gemological Guild</span>
-              <a href="guide-details.html?id=guide-18k-vs-14k-platinum" class="btn-text">Read Guide &rarr;</a>
-            </div>
-          </div>
-        </article>
+        </div>
 
-        <!-- Guide 3 -->
-        <article class="editorial-card">
-          <div class="card-media">
-            <img src="assets/images/hero-craftsman-tools.jpg" alt="Loupe Inspection Guide">
-            <div class="card-actions-float">
-              <button class="btn-icon" data-bookmark-id="guide-inspecting-with-loupe" data-bookmark-type="guides" data-bookmark-title="How to Inspect Fine Gemstones with a Loupe">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-              </button>
+        <div class="grid grid-3" style="gap: 2.5rem;">
+          
+          <!-- Guide 2 -->
+          <article class="editorial-card">
+            <div class="card-media">
+              <img src="assets/images/hero-jewelry-ring.jpg" alt="18K vs Platinum">
+              <div class="card-actions-float">
+                <button class="btn-icon" data-bookmark-id="guide-18k-vs-14k-platinum" data-bookmark-type="guides" data-bookmark-title="Precious Metals Deconstructed">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="card-content">
-            <span class="card-category">Care & Essentials · 6 min read</span>
-            <h3 class="card-title"><a href="guide-details.html?id=guide-inspecting-with-loupe">Inspecting Gemstones & Movements with a 10x Loupe</a></h3>
-            <p class="card-desc">Mastering focal plane stabilization, darkfield lighting techniques, and identifying hallmarks and laser inscriptions.</p>
-            <div class="card-footer">
-              <span style="font-size: 0.775rem; color: var(--text-muted);">Appraiser Series</span>
-              <a href="guide-details.html?id=guide-inspecting-with-loupe" class="btn-text">Read Guide &rarr;</a>
+            <div class="card-content">
+              <span class="card-category">Materials · 9 min read</span>
+              <h3 class="card-title"><a href="guide-details.html?id=guide-18k-vs-14k-platinum">Precious Metals: 18K vs 14K vs Platinum 950</a></h3>
+              <p class="card-desc">A deep comparative study of alloy chemistry, weight density, scratch resilience, and heirloom patina formation.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Gemological Guild</span>
+                <a href="guide-details.html?id=guide-18k-vs-14k-platinum" class="btn-text">Read Guide &rarr;</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
-        <!-- Guide 4 -->
-        <article class="editorial-card">
-          <div class="card-media">
-            <img src="assets/images/hero-watch-movement.jpg" alt="Mechanical vs Automatic Guide">
-            <div class="card-actions-float">
-              <button class="btn-icon" data-bookmark-id="guide-mechanical-vs-automatic" data-bookmark-type="guides" data-bookmark-title="Mechanical vs Automatic Breakdown">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
-              </button>
+          <!-- Guide 3 -->
+          <article class="editorial-card">
+            <div class="card-media">
+              <img src="assets/images/hero-craftsman-tools.jpg" alt="Loupe Inspection Guide">
+              <div class="card-actions-float">
+                <button class="btn-icon" data-bookmark-id="guide-inspecting-with-loupe" data-bookmark-type="guides" data-bookmark-title="How to Inspect Fine Gemstones with a Loupe">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="card-content">
-            <span class="card-category">Movements · 8 min read</span>
-            <h3 class="card-title"><a href="guide-details.html?id=guide-mechanical-vs-automatic">Mechanical vs Automatic: An Engineer’s Breakdown</a></h3>
-            <p class="card-desc">Mainspring dynamics, power reserve curves, winding bridles, and the tactile ritual of manual winding.</p>
-            <div class="card-footer">
-              <span style="font-size: 0.775rem; color: var(--text-muted);">Horology Review</span>
-              <a href="guide-details.html?id=guide-mechanical-vs-automatic" class="btn-text">Read Guide &rarr;</a>
+            <div class="card-content">
+              <span class="card-category">Care & Essentials · 6 min read</span>
+              <h3 class="card-title"><a href="guide-details.html?id=guide-inspecting-with-loupe">Inspecting Gemstones & Movements with a 10x Loupe</a></h3>
+              <p class="card-desc">Mastering focal plane stabilization, darkfield lighting techniques, and identifying hallmarks and laser inscriptions.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Appraiser Series</span>
+                <a href="guide-details.html?id=guide-inspecting-with-loupe" class="btn-text">Read Guide &rarr;</a>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
+          <!-- Guide 4 -->
+          <article class="editorial-card">
+            <div class="card-media">
+              <img src="assets/images/hero-watch-movement.jpg" alt="Mechanical vs Automatic Guide">
+              <div class="card-actions-float">
+                <button class="btn-icon" data-bookmark-id="guide-mechanical-vs-automatic" data-bookmark-type="guides" data-bookmark-title="Mechanical vs Automatic Breakdown">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+                </button>
+              </div>
+            </div>
+            <div class="card-content">
+              <span class="card-category">Movements · 8 min read</span>
+              <h3 class="card-title"><a href="guide-details.html?id=guide-mechanical-vs-automatic">Mechanical vs Automatic: An Engineer’s Breakdown</a></h3>
+              <p class="card-desc">Mainspring dynamics, power reserve curves, winding bridles, and the tactile ritual of manual winding.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Horology Review</span>
+                <a href="guide-details.html?id=guide-mechanical-vs-automatic" class="btn-text">Read Guide &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
+
+      <!-- SECTION 2 (NEW SECTION): PROVENANCE, HALLMARKS & CONNOISSEURSHIP -->
+      <section style="margin-bottom: 4rem; border-top: 1px solid var(--border-accent); padding-top: 4rem;">
+        <div class="flex-between items-center" style="margin-bottom: 2rem;">
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.2rem;">Connoisseurship & Verification</span>
+            <h2 style="font-size: 2rem;">Hallmarks, Provenance & Laboratory Certification</h2>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.35rem;">
+              Understanding metallurgical stamps, historical assay hallmarks, and navigating international gemological laboratory reports.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-3" style="gap: 2.5rem;">
+          
+          <!-- New Guide Card 1 -->
+          <article class="editorial-card">
+            <div class="card-media">
+              <img src="assets/images/hero-jewelry-ring.jpg" alt="Hallmarks Guide">
+            </div>
+            <div class="card-content">
+              <span class="card-category">Metallurgy & Stamps · 10 min read</span>
+              <h3 class="card-title"><a href="guide-details.html?id=guide-18k-vs-14k-platinum">The Collector’s Rosetta Stone to European Hallmarks</a></h3>
+              <p class="card-desc">Deciphering Swiss Head of Helvetia, French Eagle’s Head, and British Assay Office stamps across antique and modern jewelry.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Assay Bureau</span>
+                <a href="guide-details.html?id=guide-18k-vs-14k-platinum" class="btn-text">Read Analysis &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- New Guide Card 2 -->
+          <article class="editorial-card">
+            <div class="card-media">
+              <img src="assets/images/hero-fine-necklace.jpg" alt="Lab Reports Guide">
+            </div>
+            <div class="card-content">
+              <span class="card-category">Gemological Analysis · 8 min read</span>
+              <h3 class="card-title"><a href="guide-details.html?id=guide-inspecting-with-loupe">Laboratory Reports Decoded: GIA, SSEF & Gübelin</a></h3>
+              <p class="card-desc">How origin opinions, thermal treatment notations, and microscopic spectra influence high jewelry valuation and auction provenance.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Gemology Series</span>
+                <a href="guide-details.html?id=guide-inspecting-with-loupe" class="btn-text">Read Analysis &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- New Guide Card 3 -->
+          <article class="editorial-card">
+            <div class="card-media">
+              <img src="assets/images/hero-watch-movement.jpg" alt="Restoration Ethics Guide">
+            </div>
+            <div class="card-content">
+              <span class="card-category">Horological Ethics · 11 min read</span>
+              <h3 class="card-title"><a href="guide-details.html?id=guide-mechanical-vs-automatic">Vintage Restoration Ethics: Originality vs Over-Polishing</a></h3>
+              <p class="card-desc">Why chamfer bevels, unmolested radium luminous plots, and period-correct crowns retain paramount collector value.</p>
+              <div class="card-footer">
+                <span style="font-size: 0.775rem; color: var(--text-muted);">Restoration Guild</span>
+                <a href="guide-details.html?id=guide-mechanical-vs-automatic" class="btn-text">Read Analysis &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
 
     </div>
   </main>

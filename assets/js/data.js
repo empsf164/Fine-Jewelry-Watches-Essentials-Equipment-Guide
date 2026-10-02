@@ -157,6 +157,79 @@ const AURELLE_DATA = {
         'Grand Feu enamel dials have an extremely high rejection rate during artisan kiln firing.',
         'The ideal dress watch diameter historically rests between 36 mm and 38 mm.'
       ]
+    },
+    {
+      id: 'watch-perpetual-calendar-platinum',
+      title: 'Celeste Astronomic Perpetual Calendar & Moonphase',
+      category: 'Watches',
+      subcategory: 'Complications',
+      type: 'Watch',
+      tagline: 'Mechanically programmed through the year 2100 with aventurine star dial',
+      image: 'assets/images/hero-watch-movement.jpg',
+      priceGuide: 'Grand Complication',
+      badge: 'Grand Complication',
+      rating: 5.0,
+      overview: 'A breathtaking mechanical calendar that automatically accounts for months of 28, 30, and 31 days as well as leap years, accompanied by an astronomically accurate moonphase with a deviation of only 1 day in 122 years.',
+      specs: {
+        movement: 'Calibre CP-99 Automatic Perpetual Calendar',
+        powerReserve: '68 Hours',
+        caseMaterial: 'Platinum 950 with Hand-Finished Anglage',
+        caseDiameter: '40.0 mm',
+        caseThickness: '11.2 mm',
+        waterResistance: '30 Meters (3 ATM)',
+        crystal: 'Anti-Reflective Domed Sapphire',
+        frequency: '28,800 vph (4 Hz)',
+        complications: 'Perpetual Calendar, Leap Year, 122-Year Moonphase, Day/Date/Month',
+        strap: 'Midnight Blue Hand-Rolled Alligator with Platinum Deployant'
+      },
+      materials: [
+        { name: 'Platinum 950', desc: 'Hypoallergenic, dense 95% pure noble metal with eternal patina.' },
+        { name: 'Aventurine Glass Dial', desc: 'Copper crystal inclusions evoking a starlit night sky.' }
+      ],
+      care: [
+        'Keep continuous on an automatic winder to prevent manual resetting of calendar disks.',
+        'Never adjust calendar correctors between 8 PM and 3 AM when gears are engaged.'
+      ],
+      thingsToKnow: [
+        'The perpetual calendar mechanism was first miniaturized for wristwatches by Patek Philippe in 1925.',
+        'Leap year cam completes one full revolution every 48 months.'
+      ]
+    },
+    {
+      id: 'watch-aero-gmt-titanium',
+      title: 'Aero-Navigator Dual-Time GMT Chronometer',
+      category: 'Watches',
+      subcategory: 'Automatic',
+      type: 'Watch',
+      tagline: 'Independent 24-hour jumping local hour hand with bi-color ceramic 24h bezel',
+      image: 'assets/images/hero-chronograph.jpg',
+      priceGuide: 'Aviation Instrument',
+      badge: 'Traveler Icon',
+      rating: 4.9,
+      overview: 'Designed for transcontinental globetrotters and aviators, allowing simultaneous tracking of home reference time and local destination time with an instantaneous jumping hour mechanism.',
+      specs: {
+        movement: 'Calibre AN-24 Certified COSC Chronometer',
+        powerReserve: '70 Hours',
+        caseMaterial: 'Grade 5 Titanium & Dual-Tone Ceramic',
+        caseDiameter: '40.5 mm',
+        caseThickness: '12.4 mm',
+        waterResistance: '100 Meters (10 ATM)',
+        crystal: 'Sapphire Crystal with Cyclops Magnifier',
+        frequency: '28,800 vph',
+        complications: 'Independent 24h GMT Hand, Date, 24-Hour Rotating Bezel',
+        strap: 'Titanium Grade 5 3-Link Bracelet with Extension Link'
+      },
+      materials: [
+        { name: 'Grade 5 Titanium', desc: 'Lightweight aerospace alloy resisting sweat and ocean corrosion.' },
+        { name: 'Bi-Color Zirconia Ceramic', desc: 'Split daytime/nighttime tone sintered at 1500°C.' }
+      ],
+      care: [
+        'Rinse in freshwater after swimming; dry with a soft cloth.',
+        'Operate winding crown only when screw-lock is completely unthreaded.'
+      ],
+      thingsToKnow: [
+        'True "Flyer GMT" movements permit jumping the 12-hour hand backwards and forwards without hacking the seconds hand.'
+      ]
     }
   ],
 
@@ -300,6 +373,75 @@ const AURELLE_DATA = {
       ],
       thingsToKnow: [
         'Pearls are organic gems with a Mohs hardness of 2.5–4.5, requiring gentle, separate storage.'
+      ]
+    },
+    {
+      id: 'jewelry-art-deco-sapphire-brooch',
+      title: 'Belle Époque Platinum & Kashmir Sapphire Brooch',
+      category: 'Jewelry',
+      subcategory: 'Brooches',
+      type: 'Jewelry',
+      tagline: 'Geometric openwork filigree set with unheated Kashmir sapphire and baguette diamonds',
+      image: 'assets/images/hero-craftsman-tools.jpg',
+      priceGuide: 'Heirloom Masterwork',
+      badge: 'Historic Provenance',
+      rating: 5.0,
+      overview: 'An exquisite museum-grade Art Deco brooch showcasing an intensely saturated cornflower blue unheated Kashmir sapphire, surrounded by hand-pierced platinum openwork with calibre-cut calibré accents.',
+      specs: {
+        metal: 'Platinum 950 with Hand-Milgrained Edges',
+        gemstone: 'Natural Kashmir Sapphire & Old European Cut Diamonds',
+        caratWeight: '5.10 ct (Sapphire) + 3.40 ct (Diamonds)',
+        cut: 'Cushion Mixed Cut Sapphire & Baguette Frame',
+        colorGrade: 'Royal Cornflower Blue (No Heat)',
+        clarity: 'Velvety Silk Optical Character',
+        dimensions: '54 mm x 28 mm',
+        clasp: 'Double-Pin Safety Catch Mechanism'
+      },
+      materials: [
+        { name: 'Kashmir Sapphire', desc: 'Mined from the legendary high-altitude Zanskar deposits (1881–1887).' },
+        { name: 'Platinum 950', desc: 'Superior tensile strength allowing razor-thin filigree wire.' }
+      ],
+      care: [
+        'Handle with cotton gloves to prevent skin sebum transfer onto openwork.',
+        'Clean exclusively with specialized soft horsehair brushes and mild distilled water.'
+      ],
+      thingsToKnow: [
+        'Kashmir sapphires obtain their signature velvety glow from microscopic rutile silk needles.',
+        'Art Deco jewelers championed platinum because it resisted tarnishing and held diamonds in minimal prongs.'
+      ]
+    },
+    {
+      id: 'jewelry-imperial-ruby-pendant',
+      title: 'Imperial Burmese Pigeon Blood Ruby & Diamond Drop',
+      category: 'Jewelry',
+      subcategory: 'Necklaces',
+      type: 'Jewelry',
+      tagline: '4.20 ct unheated Mogok ruby with strong red UV fluorescence',
+      image: 'assets/images/hero-fine-necklace.jpg',
+      priceGuide: 'High Jewelry Exclusive',
+      badge: 'Rare Gem',
+      rating: 5.0,
+      overview: 'A legendary gemstone from the historic Mogok stone tract in Myanmar. The unheated pigeon’s blood ruby exhibits powerful natural fluorescence, glowing like red embers under natural daylight.',
+      specs: {
+        metal: '18K Yellow Gold Setting & Platinum 950 Bail',
+        gemstone: 'Natural Unheated Burmese Ruby & Pear Diamonds',
+        caratWeight: '4.20 ct (Ruby) + 2.15 ct (Diamond Halo)',
+        cut: 'Oval Brilliant / Step Cut',
+        colorGrade: 'Pigeon’s Blood Red (SSEF Certified)',
+        clarity: 'Eye Clean with Microscopic Rutile Silk',
+        dimensions: '18.0 inches (45.7 cm) Platinum Chain',
+        clasp: 'Hand-chased Lobster Clasp with Safety Plunger'
+      },
+      materials: [
+        { name: 'Mogok Ruby (Burma)', desc: 'Chromium-rich corundum with minimal iron, generating intense red fluorescence.' },
+        { name: '18K Yellow Gold', desc: 'Yellow gold inner bezel enhances warm ruby undertones.' }
+      ],
+      care: [
+        'Safe for warm sudsy water cleaning; avoid harsh chemical household cleaners.',
+        'Store in a dedicated silk-lined compartment away from diamond jewelry.'
+      ],
+      thingsToKnow: [
+        'Unheated Burmese rubies over 3 carats of top pigeon’s blood saturation command higher per-carat auction prices than colorless diamonds.'
       ]
     }
   ],

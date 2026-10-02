@@ -40,8 +40,49 @@
   /* Remove header signup button in all mobile, tab, and 1024px views */
   .site-header .auth-nav-container,
   .navbar-container .auth-nav-container,
-  .nav-actions .auth-nav-container {
+  .nav-actions .auth-nav-container,
+  .site-header a[href="signup.html"],
+  .nav-actions a[href="signup.html"] {
     display: none !important;
+  }
+
+  /* Ensure mobile drawer layout is strictly contained with pinned footer */
+  .mobile-nav-drawer {
+    height: 100vh !important;
+    height: 100dvh !important;
+    max-height: 100vh !important;
+    max-height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    padding: 1.25rem 1.25rem max(1rem, env(safe-area-inset-bottom, 1rem)) !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-nav-links {
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    min-height: 0 !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .mobile-nav-footer {
+    flex-shrink: 0 !important;
+    margin-top: auto !important;
+    padding-top: 0.85rem !important;
+    border-top: 1px solid var(--border-subtle) !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .mobile-nav-footer .auth-nav-container,
+  .mobile-nav-footer .btn {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    text-align: center !important;
+    justify-content: center !important;
   }
 
   .hamburger-btn {

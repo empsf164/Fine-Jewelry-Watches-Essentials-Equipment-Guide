@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discovery Catalog — AURELLE Fine Jewelry & Watches</title>
+  <meta name="description" content="Explore, filter, and compare high jewelry, luxury timepieces, precious metals, gemstones, and care equipment.">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+  <!-- MANDATORY NAVBAR -->
+  <header class="site-header">
+    <div class="container navbar-container">
+      <a href="index.html" class="brand-container">
+        <span class="brand-logo">AURELLE<span class="brand-dot"></span></span>
+      </a>
+
+      <nav class="nav-menu">
+        <div class="nav-item"><a href="index.html" class="nav-link">Home</a></div>
+        
+        <div class="nav-item">
+          <a href="discover.html?cat=jewelry" class="nav-link">
+            Jewelry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu dropdown-wide">
+            <a href="discover.html?cat=rings" class="dropdown-item"><span class="dropdown-item-title">Rings</span><span class="dropdown-item-desc">Solitaires, halos</span></a>
+            <a href="discover.html?cat=necklaces" class="dropdown-item"><span class="dropdown-item-title">Necklaces</span><span class="dropdown-item-desc">Rivière collars</span></a>
+            <a href="discover.html?cat=earrings" class="dropdown-item"><span class="dropdown-item-title">Earrings</span><span class="dropdown-item-desc">Drops, chandeliers</span></a>
+            <a href="discover.html?cat=bracelets" class="dropdown-item"><span class="dropdown-item-title">Bracelets</span><span class="dropdown-item-desc">Tennis bracelets</span></a>
+            <a href="discover.html?cat=brooches" class="dropdown-item"><span class="dropdown-item-title">Brooches</span><span class="dropdown-item-desc">Art Deco pins</span></a>
+            <a href="discover.html?cat=materials" class="dropdown-item"><span class="dropdown-item-title">Fine Jewelry Materials</span><span class="dropdown-item-desc">18K Gold, Platinum</span></a>
+            <a href="discover.html?cat=gemstones" class="dropdown-item"><span class="dropdown-item-title">Gemstones</span><span class="dropdown-item-desc">Diamonds, Sapphires</span></a>
+            <a href="essentials.html#jewelry-care" class="dropdown-item"><span class="dropdown-item-title">Jewelry Care</span><span class="dropdown-item-desc">Cleaning kits</span></a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="discover.html?cat=watches" class="nav-link">
+            Watches <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu dropdown-wide">
+            <a href="discover.html?cat=mechanical" class="dropdown-item"><span class="dropdown-item-title">Mechanical</span><span class="dropdown-item-desc">Hand-wound</span></a>
+            <a href="discover.html?cat=automatic" class="dropdown-item"><span class="dropdown-item-title">Automatic</span><span class="dropdown-item-desc">Self-winding rotor</span></a>
+            <a href="discover.html?cat=quartz" class="dropdown-item"><span class="dropdown-item-title">Quartz</span><span class="dropdown-item-desc">High precision</span></a>
+            <a href="discover.html?cat=dress-watches" class="dropdown-item"><span class="dropdown-item-title">Dress Watches</span><span class="dropdown-item-desc">Ultra-thin formal</span></a>
+            <a href="discover.html?cat=dive-watches" class="dropdown-item"><span class="dropdown-item-title">Dive Watches</span><span class="dropdown-item-desc">300M+ water seals</span></a>
+            <a href="discover.html?cat=chronographs" class="dropdown-item"><span class="dropdown-item-title">Chronographs</span><span class="dropdown-item-desc">Column-wheel timers</span></a>
+            <a href="discover.html?cat=complications" class="dropdown-item"><span class="dropdown-item-title">Complications</span><span class="dropdown-item-desc">Tourbillons</span></a>
+            <a href="index.html#movement-section" class="dropdown-item"><span class="dropdown-item-title">Watch Movements</span><span class="dropdown-item-desc">Interactive schematics</span></a>
+            <a href="essentials.html#watch-care" class="dropdown-item"><span class="dropdown-item-title">Watch Care</span><span class="dropdown-item-desc">Winders & tools</span></a>
+          </div>
+        </div>
+
+        <div class="nav-item">
+          <a href="essentials.html" class="nav-link">
+            Essentials <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="essentials.html#jewelry-tools" class="dropdown-item"><span class="dropdown-item-title">Jewelry Tools</span><span class="dropdown-item-desc">10x Loupes</span></a>
+            <a href="essentials.html#watch-tools" class="dropdown-item"><span class="dropdown-item-title">Watch Tools</span><span class="dropdown-item-desc">Spring-bar tools</span></a>
+            <a href="essentials.html#cleaning-care" class="dropdown-item"><span class="dropdown-item-title">Cleaning & Care</span><span class="dropdown-item-desc">Ultrasonic baths</span></a>
+            <a href="essentials.html#storage" class="dropdown-item"><span class="dropdown-item-title">Storage</span><span class="dropdown-item-desc">Travel rolls</span></a>
+          </div>
+        </div>
+
+        <div class="nav-item"><a href="guides.html" class="nav-link">Guides</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="search-open-btn" aria-label="Open Search"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+        <button class="theme-toggle-btn" aria-label="Toggle Theme"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></button>
+        <div class="auth-nav-container flex items-center gap-1">
+          <a href="login.html" class="nav-link">Sign In</a>
+          <a href="signup.html" class="btn btn-primary btn-sm">Sign Up</a>
+        </div>
+        <button class="hamburger-btn" aria-label="Open Mobile Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <span class="brand-logo" style="font-size: 1.4rem;">AURELLE<span class="brand-dot"></span></span>
+      <button class="mobile-nav-close" aria-label="Close Menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-accordion-toggle">Home</a></li>
+      <li>
+        <button class="mobile-accordion-toggle">Jewelry <span>▾</span></button>
+        <div class="mobile-accordion-content">
+          <a href="discover.html?cat=rings">Rings</a>
+          <a href="discover.html?cat=necklaces">Necklaces</a>
+          <a href="discover.html?cat=earrings">Earrings</a>
+          <a href="discover.html?cat=bracelets">Bracelets</a>
+          <a href="discover.html?cat=materials">Fine Jewelry Materials</a>
+          <a href="discover.html?cat=gemstones">Gemstones</a>
+          <a href="essentials.html#jewelry-care">Jewelry Care</a>
+        </div>
+      </li>
+      <li>
+        <button class="mobile-accordion-toggle">Watches <span>▾</span></button>
+        <div class="mobile-accordion-content">
+          <a href="discover.html?cat=mechanical">Mechanical</a>
+          <a href="discover.html?cat=automatic">Automatic</a>
+          <a href="discover.html?cat=quartz">Quartz</a>
+          <a href="discover.html?cat=dress-watches">Dress Watches</a>
+          <a href="discover.html?cat=dive-watches">Dive Watches</a>
+          <a href="discover.html?cat=chronographs">Chronographs</a>
+          <a href="essentials.html#watch-care">Watch Care & Winders</a>
+        </div>
+      </li>
+      <li>
+        <button class="mobile-accordion-toggle">Essentials <span>▾</span></button>
+        <div class="mobile-accordion-content">
+          <a href="essentials.html#jewelry-tools">Jewelry Tools & Loupes</a>
+          <a href="essentials.html#watch-tools">Watch Tools & Spring Bars</a>
+          <a href="essentials.html#cleaning-care">Cleaning & Ultrasonic</a>
+          <a href="essentials.html#storage">Storage & Travel Rolls</a>
+        </div>
+      </li>
+      <li><a href="guides.html" class="mobile-accordion-toggle">Guides</a></li>
+      <li><a href="about.html" class="mobile-accordion-toggle">About</a></li>
+      <li><a href="contact.html" class="mobile-accordion-toggle">Contact</a></li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <div class="auth-nav-container flex flex-col gap-2">
+        <a href="login.html" class="btn btn-outline" style="width: 100%;">Sign In</a>
+        <a href="signup.html" class="btn btn-primary" style="width: 100%;">Sign Up</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MAIN DISCOVERY BODY -->
+  <main class="section">
+    <div class="container">
+      
+      <!-- Discovery Header -->
+      <div class="section-header text-left" style="margin-bottom: 2rem;">
+        <span class="eyebrow">Comprehensive Knowledge Base</span>
+        <h1>Discover & Curate</h1>
+        <p>Explore fine jewelry masterpieces, horological complications, noble metals, and preservation tools.</p>
+      </div>
+
+      <!-- Search Field on Discover -->
+      <div style="margin-bottom: 2rem;">
+        <div style="display: flex; align-items: center; background: var(--bg-card); border: 1px solid var(--border-medium); border-radius: var(--radius-sm); padding: 0.85rem 1.25rem; gap: 0.75rem;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-gold);"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="discover-search-input" placeholder="Search jewelry, watches, materials, movements, essentials..." style="width: 100%; font-size: 1rem; color: var(--text-primary);">
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div style="display: flex; gap: 0.5rem; overflow-x: auto; padding-bottom: 1.25rem; margin-bottom: 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+        <button class="btn btn-sm btn-outline active" data-filter-cat="all">All Discoveries</button>
+        <button class="btn btn-sm btn-outline" data-filter-cat="jewelry">Fine Jewelry</button>
+        <button class="btn btn-sm btn-outline" data-filter-cat="watches">Luxury Watches</button>
+        <button class="btn btn-sm btn-outline" data-filter-cat="essentials">Care & Tools</button>
+        <button class="btn btn-sm btn-outline" data-filter-cat="rings">Rings</button>
+        <button class="btn btn-sm btn-outline" data-filter-cat="chronographs">Chronographs</button>
+        <button class="btn btn-sm btn-outline" data-filter-cat="mechanical">Mechanical</button>
+      </div>
+
+      <!-- Active Filter Chips Area -->
+      <div id="active-filter-chips" class="filter-chips-container" style="display: none;"></div>
+
+      <!-- Controls Row (Count & Sort) -->
+      <div class="flex-between items-center" style="margin-bottom: 2rem;">
+        <span id="discover-result-count" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Loading discoveries...</span>
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <label for="discover-sort-select" style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Sort By:</label>
+          <select id="discover-sort-select" style="background: var(--bg-card); border: 1px solid var(--border-medium); padding: 0.4rem 0.85rem; border-radius: var(--radius-xs); color: var(--text-primary); font-size: 0.85rem; cursor: pointer;">
+            <option value="featured">Featured Reference</option>
+            <option value="rating">Highest Rated</option>
+            <option value="newest">Newest Catalog Additions</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Layout Grid (Sidebar + Main Grid) -->
+      <div class="discover-layout-grid" style="display: grid; grid-template-columns: 260px 1fr; gap: 2.5rem; align-items: flex-start;">
+        
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+          
+          <!-- Metallurgy Facet -->
+          <div class="filter-group">
+            <h4 class="filter-title">Precious Metals</h4>
+            <div class="filter-options">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="materials" value="18K Gold">
+                <span class="checkbox-mark"></span>
+                <span>18K Gold</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="materials" value="Platinum">
+                <span class="checkbox-mark"></span>
+                <span>Platinum 950</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="materials" value="Titanium">
+                <span class="checkbox-mark"></span>
+                <span>Titanium Grade 5</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="materials" value="Steel">
+                <span class="checkbox-mark"></span>
+                <span>904L / 316L Steel</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Gemstones Facet -->
+          <div class="filter-group">
+            <h4 class="filter-title">Gemstones</h4>
+            <div class="filter-options">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="gemstones" value="Emerald">
+                <span class="checkbox-mark"></span>
+                <span>Colombian Emerald</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="gemstones" value="Diamond">
+                <span class="checkbox-mark"></span>
+                <span>Natural Diamond</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="gemstones" value="Sapphire">
+                <span class="checkbox-mark"></span>
+                <span>Royal Blue Sapphire</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="gemstones" value="Pearl">
+                <span class="checkbox-mark"></span>
+                <span>South Sea Pearl</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Watch Movements Facet -->
+          <div class="filter-group">
+            <h4 class="filter-title">Watch Movements</h4>
+            <div class="filter-options">
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="movements" value="Manual">
+                <span class="checkbox-mark"></span>
+                <span>Manual-Wind</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="movements" value="Automatic">
+                <span class="checkbox-mark"></span>
+                <span>Automatic (Rotor)</span>
+              </label>
+              <label class="custom-checkbox">
+                <input type="checkbox" class="facet-checkbox" data-facet-type="movements" value="Tourbillon">
+                <span class="checkbox-mark"></span>
+                <span>Tourbillon Complication</span>
+              </label>
+            </div>
+          </div>
+
+          <button id="clear-all-filters-btn" class="btn btn-outline btn-sm" style="width: 100%; margin-top: 1rem;">Reset All Filters</button>
+        </aside>
+
+        <!-- Dynamic Discovery Grid -->
+        <div id="discover-grid" class="grid grid-3">
+          <!-- Rendered dynamically by filters.js -->
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- LUXURY SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <!-- Brand Description & Social Icons -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">AURELLE<span class="brand-dot"></span></a>
+          <p>The premier independent editorial reference and discovery platform for fine jewelry, haute horlogerie, precious metallurgy, and craftsman care equipment.</p>
+          <div class="footer-social-links" style="display: flex; gap: 0.75rem; margin-top: 1.25rem; margin-bottom: 1rem;">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="Instagram" style="width: 36px; height: 36px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="Pinterest" style="width: 36px; height: 36px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="4" x2="12" y2="20"/><path d="M12 4a8 8 0 0 1 8 8c0 3.87-2.76 7.1-6.5 7.85-.12-.7-.22-1.77.05-2.53l1.1-4.66a2.8 2.8 0 0 0-.25-2.02 2.37 2.37 0 0 0-2.07-1.1c-1.46 0-2.58 1.1-2.58 2.58 0 .86.33 1.63.85 2.14.09.09.1.18.07.3l-.33 1.34c-.05.21-.18.25-.38.16-1.34-.62-2.18-2.58-2.18-4.16 0-3.39 2.46-6.5 7.11-6.5 3.73 0 6.63 2.66 6.63 6.21 0 3.71-2.34 6.69-5.59 6.69-1.09 0-2.12-.57-2.47-1.24l-.67 2.57c-.24.94-.9 2.11-1.34 2.83A8 8 0 1 1 12 4z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="YouTube" style="width: 36px; height: 36px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="X / Twitter" style="width: 36px; height: 36px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l11.733 16h4.267l-11.733 -16z"/><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn-icon" aria-label="LinkedIn" style="width: 36px; height: 36px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--text-muted);">
+            Editorial Office: Geneva &middot; London &middot; New York
+          </div>
+        </div>
+
+        <!-- Jewelry Links -->
+        <div>
+          <h4 class="footer-heading">Fine Jewelry</h4>
+          <ul class="footer-links">
+            <li><a href="discover.html?cat=rings">Rings & Solitaires</a></li>
+            <li><a href="discover.html?cat=necklaces">Necklaces & Rivière</a></li>
+            <li><a href="discover.html?cat=earrings">Earrings & Drops</a></li>
+            <li><a href="discover.html?cat=bracelets">Tennis Bracelets</a></li>
+            <li><a href="discover.html?cat=gemstones">Gemstones & Pearls</a></li>
+          </ul>
+        </div>
+
+        <!-- Watches Links -->
+        <div>
+          <h4 class="footer-heading">Luxury Watches</h4>
+          <ul class="footer-links">
+            <li><a href="discover.html?cat=mechanical">Mechanical Calibres</a></li>
+            <li><a href="discover.html?cat=automatic">Automatic Rotors</a></li>
+            <li><a href="discover.html?cat=chronographs">Chronographs</a></li>
+            <li><a href="discover.html?cat=dive-watches">Dive Instruments</a></li>
+            <li><a href="index.html#movement-section">Movement Explorer</a></li>
+          </ul>
+        </div>
+
+        <!-- Essentials Links -->
+        <div>
+          <h4 class="footer-heading">Essentials</h4>
+          <ul class="footer-links">
+            <li><a href="essentials.html#jewelry-tools">10x Triplet Loupes</a></li>
+            <li><a href="essentials.html#watch-tools">Spring-Bar Tools</a></li>
+            <li><a href="essentials.html#cleaning-care">Ultrasonic Cleaners</a></li>
+            <li><a href="essentials.html#storage">Travel Rolls & Cases</a></li>
+            <li><a href="essentials.html#maintenance-equipment">Watch Winders</a></li>
+          </ul>
+        </div>
+
+        <!-- Editorial & Company -->
+        <div>
+          <h4 class="footer-heading">Editorial & Guide</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Aurelle</a></li>
+            <li><a href="guides.html">Editorial Library</a></li>
+            <li><a href="discover.html">Discover Catalog</a></li>
+            <li><a href="contact.html">Editorial Inquiries</a></li>
+            <li><a href="login.html">Collector Sign In</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>&copy; 2026 AURELLE Inc. All rights reserved. The Essential Guide to Fine Jewelry & Watches.</div>
+        <div class="footer-bottom-links">
+          <a href="about.html">Standards & Ethics</a>
+          <a href="contact.html">Contact Bureau</a>
+          <a href="coming-soon.html">Collector API</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/bookmarks.js"></script>
+  <script src="assets/js/compare.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script src="assets/js/filters.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>

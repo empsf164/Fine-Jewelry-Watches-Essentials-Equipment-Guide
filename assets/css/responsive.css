@@ -1,0 +1,250 @@
+/* ==========================================================================
+   AURELLE — Responsive Stylesheet
+   Exhaustive Breakpoint Tuning (320px to 2560px+)
+   Guaranteed Zero Horizontal Page Overflow
+   ========================================================================== */
+
+/* Large Desktops (>= 1440px) */
+@media (min-width: 1440px) {
+  :root {
+    --container-max: 1400px;
+  }
+}
+
+/* Desktops & Laptops (<= 1200px) */
+@media (max-width: 1200px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 2.5rem;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .movement-display-grid {
+    gap: 2rem;
+  }
+}
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --nav-height: 70px;
+  }
+
+  .nav-menu {
+    display: none; /* Switch to Mobile Drawer */
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .details-gallery {
+    position: static;
+  }
+
+  .movement-display-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .discover-layout-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .filter-sidebar {
+    display: none; /* Replaced by interactive drawer on tablet/mobile */
+  }
+
+  .mobile-filter-trigger {
+    display: inline-flex !important;
+  }
+}
+
+/* Small Tablets & Large Phones (<= 768px) */
+@media (max-width: 768px) {
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-sm {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .container {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .brand-logo {
+    font-size: 1.45rem;
+    letter-spacing: 0.2em;
+  }
+
+  .brand-tagline {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .compare-floating-tray {
+    width: calc(100% - 2rem);
+    bottom: 1rem;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+  }
+
+  .compare-tray-slot {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .spec-sheet-grid,
+  .movement-specs-list {
+    grid-template-columns: 1fr;
+  }
+
+  .details-tabs {
+    gap: 1rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 0.5rem;
+  }
+
+  .saved-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 0.5rem;
+  }
+}
+
+/* Mobile Devices (<= 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
+  }
+
+  .auth-nav-container .nav-link {
+    display: none;
+  }
+
+  .brand-logo {
+    font-size: 1.25rem;
+    letter-spacing: 0.16em;
+  }
+
+  .hero-editorial-badge {
+    font-size: 0.65rem;
+  }
+
+  .movement-explorer-widget {
+    padding: 1.25rem;
+  }
+
+  .movement-schematic-box svg {
+    height: 200px;
+  }
+
+  .search-modal {
+    padding: 2rem 1rem 1rem;
+  }
+
+  .toast {
+    min-width: calc(100vw - 2rem);
+    right: 1rem;
+    left: 1rem;
+    bottom: 1rem;
+  }
+}
+
+/* Small Screens (<= 360px) */
+@media (max-width: 360px) {
+  .brand-logo {
+    font-size: 1.15rem;
+    letter-spacing: 0.12em;
+  }
+
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.75rem;
+  }
+}
+
+/* Touch & Pointer Fine Tuning */
+@media (hover: none) and (pointer: coarse) {
+  .nav-link,
+  .btn,
+  .dropdown-item,
+  .mobile-accordion-toggle {
+    min-height: 44px;
+  }
+}
+
+/* Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

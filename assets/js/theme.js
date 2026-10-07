@@ -36,11 +36,46 @@
     applyTheme(next);
   };
 
-  // Bind clicks after DOM loaded
+  // Bind clicks and setup back-to-top after DOM loaded
   document.addEventListener('DOMContentLoaded', () => {
     applyTheme(getPreferredTheme());
     document.querySelectorAll('.theme-toggle-btn').forEach(btn => {
       btn.addEventListener('click', window.toggleAurelleTheme);
     });
+
+    initBackToTop();
   });
+
+  // Global Back-to-Top Button Controller
+  function initBackToTop() {
+    let btn = document.getElementById('back-to-top-btn');
+    if (!btn) {
+      btn = document.createElement('button');
+      btn.id = 'back-to-top-btn';
+      btn.className = 'back-to-top-btn';
+      btn.setAttribute('aria-label', 'Back to top');
+      btn.setAttribute('title', 'Back to top');
+      btn.innerHTML = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>`;
+      document.body.appendChild(btn);
+    }
+
+    function toggleVisibility() {
+      if (window.scrollY > 300) {
+        btn.classList.add('visible');
+      } else {
+        btn.classList.remove('visible');
+      }
+    }
+
+    window.addEventListener('scroll', toggleVisibility, { passive: true });
+    toggleVisibility();
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
 })();
+

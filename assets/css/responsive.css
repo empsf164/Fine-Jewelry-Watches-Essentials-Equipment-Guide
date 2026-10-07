@@ -122,6 +122,35 @@
   .mobile-filter-trigger {
     display: inline-flex !important;
   }
+
+  /* 1024px & Tablet Hero and Map Card Alignment */
+  .guides-featured-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .guides-featured-card .card-media {
+    min-height: 280px !important;
+    max-height: 360px !important;
+    height: 320px !important;
+  }
+
+  .guides-featured-card .card-content {
+    padding: 2.25rem 2rem !important;
+  }
+
+  .bureau-map-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bureau-map-card .map-frame-wrapper {
+    min-height: 340px !important;
+    height: 340px !important;
+    width: 100% !important;
+  }
+
+  .bureau-map-card .bureau-info-panel {
+    padding: 2rem 1.75rem !important;
+  }
 }
 
 /* Tablet Card Grid Alignment (601px - 1024px): 2 cards per row & last odd card centered */
@@ -236,6 +265,165 @@
 
   .hero-cta-group .btn {
     width: 100%;
+  }
+
+  /* Home Page Hero Macro Showcase Contrast & Alignment on Mobile */
+  .hero-macro-showcase img {
+    height: 460px !important;
+  }
+
+  .hero-macro-overlay {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1.5rem 1.25rem !important;
+    gap: 1rem !important;
+    background: linear-gradient(0deg, rgba(8, 9, 10, 0.98) 0%, rgba(8, 9, 10, 0.9) 65%, rgba(8, 9, 10, 0.5) 90%, transparent 100%) !important;
+  }
+
+  .hero-macro-overlay .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Home Page CTA before Footer Button Alignment on Mobile */
+  .cta-action-group,
+  .section-cta-group,
+  .flex-center.gap-2 {
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+
+  .cta-action-group .btn,
+  .section-cta-group .btn,
+  .flex-center.gap-2 > .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Essentials Page Jump Navigation & Button Alignment on Mobile */
+  .essentials-jump-nav {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  .essentials-jump-nav .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .editorial-card .card-footer .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* Guides Page Hero & Below Hero Card Alignment on Mobile */
+  .guides-featured-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .guides-featured-card .card-media {
+    min-height: 220px !important;
+    height: 220px !important;
+    width: 100% !important;
+  }
+
+  .guides-featured-card .card-content {
+    padding: 1.5rem 1.25rem !important;
+  }
+
+  .guides-featured-card .card-content .flex-between {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.85rem !important;
+  }
+
+  .guides-featured-card .card-content .flex-between .btn {
+    width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  .editorial-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Contact Page Button Sizing & Map Card Alignment on Mobile */
+  .contact-social-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.6rem !important;
+    width: 100% !important;
+  }
+
+  .contact-social-grid .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.65rem 0.5rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  .bureau-switcher-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.6rem !important;
+    width: 100% !important;
+  }
+
+  .bureau-switcher-grid .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 0.65rem 0.5rem !important;
+    font-size: 0.78rem !important;
+  }
+
+  .bureau-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  .bureau-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  #contact-form button[type="submit"] {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .bureau-map-card {
+    grid-template-columns: 1fr !important;
+  }
+
+  .bureau-map-card .map-frame-wrapper {
+    min-height: 260px !important;
+    height: 260px !important;
+  }
+
+  .bureau-map-card .bureau-info-panel {
+    padding: 1.5rem 1.25rem !important;
+  }
+
+  /* Back to top button on mobile */
+  .back-to-top-btn {
+    bottom: 1.25rem !important;
+    right: 1.25rem !important;
+    width: 42px !important;
+    height: 42px !important;
   }
 
   .spec-sheet-grid,

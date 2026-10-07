@@ -230,6 +230,42 @@ const AURELLE_DATA = {
       thingsToKnow: [
         'True "Flyer GMT" movements permit jumping the 12-hour hand backwards and forwards without hacking the seconds hand.'
       ]
+    },
+    {
+      id: 'watch-astronomical-quartz',
+      title: 'Chronomètre Souverain High-Precision Quartz',
+      category: 'Watches',
+      subcategory: 'Quartz',
+      type: 'Watch',
+      tagline: 'Thermo-compensated 32,768 Hz quartz resonator accurate to ±5 seconds per year',
+      image: 'assets/images/hero-watch-movement.jpg',
+      priceGuide: 'High Horology Quartz',
+      badge: 'Precision Master',
+      rating: 4.9,
+      overview: 'Elevating quartz technology into high watchmaking, this calibre integrates a dual-crystal thermo-compensating circuit within a hand-finished rhodium-plated brass bridge with Geneva stripes.',
+      specs: {
+        movement: 'Calibre TC-990 Thermo-Compensated High-Beat Quartz',
+        powerReserve: '5-Year Lithium Battery Life',
+        caseMaterial: '950 Platinum & Sapphire Crystal Caseback',
+        caseDiameter: '38.0 mm',
+        caseThickness: '7.8 mm',
+        waterResistance: '50 Meters (5 ATM)',
+        crystal: 'Box-domed Sapphire with Double AR Coating',
+        frequency: '32,768 Hz with Micro-processor Trimmer',
+        complications: 'Dead-Beat Seconds Hand, End-of-Life Battery Indicator',
+        strap: 'Hand-sewn Midnight Blue Box Calf with Platinum Buckle'
+      },
+      materials: [
+        { name: '950 Platinum', desc: '95% pure noble metal with enduring deep luster and hefty wrist presence.' },
+        { name: 'Synthetic Quartz Crystal', desc: 'Specially aged piezoelectric quartz fork cut to exact AT angle.' }
+      ],
+      care: [
+        'Replace battery every 4 to 5 years at an authorized service centre.',
+        'Check water resistance gaskets upon every battery replacement.'
+      ],
+      thingsToKnow: [
+        'Dead-beat seconds mechanics jump exactly once per second, honoring the historical marine chronometer tradition.'
+      ]
     }
   ],
 
@@ -442,6 +478,74 @@ const AURELLE_DATA = {
       ],
       thingsToKnow: [
         'Unheated Burmese rubies over 3 carats of top pigeon’s blood saturation command higher per-carat auction prices than colorless diamonds.'
+      ]
+    },
+    {
+      id: 'jewelry-gemstone-kashmir-sapphire',
+      title: 'Kashmir Cornflower Velvet Sapphire Solitaire',
+      category: 'Jewelry',
+      subcategory: 'Gemstones',
+      type: 'Jewelry',
+      tagline: '5.10 ct unheated Kashmir sapphire with iconic velvety silk inclusion glow',
+      image: 'assets/images/hero-craftsman-tools.jpg',
+      priceGuide: 'Museum Ingot Level',
+      badge: 'Heirloom Apex',
+      rating: 5.0,
+      overview: 'Sourced from the high-altitude remote deposits of the Zanskar range in Jammu & Kashmir, this legendary gemstone displays the incomparable cornflower blue hue enriched by fine microscopic rutile silk.',
+      specs: {
+        metal: 'Platinum 950 Hand-Wrought Knife-Edge Band',
+        gemstone: 'Natural Unheated Kashmir Sapphire & Trapezoid Diamonds',
+        caratWeight: '5.10 ct (Sapphire) + 1.20 ct (Side Diamonds)',
+        cut: 'Cushion Antique Brilliant Cut',
+        colorGrade: 'Royal Cornflower Blue (Gübelin Certified)',
+        clarity: 'Velvety Transparency with Sub-microscopic Silk',
+        dimensions: 'Ring Size 6.0 (Resizing available upon request)',
+        clasp: 'Solid Platinum Setting'
+      },
+      materials: [
+        { name: 'Kashmir Blue Corundum', desc: 'Rare titanium-iron trace elements generating deep velvety blue dispersion.' },
+        { name: 'Platinum 950', desc: 'Dense unyielding noble alloy securing gemstone without prong fatigue.' }
+      ],
+      care: [
+        'Ultrasonic cleaning is safe for untreated sapphire, but mild detergent with a baby toothbrush is preferred.',
+        'Avoid exposure to hydrofluoric acid and sudden thermal extremes.'
+      ],
+      thingsToKnow: [
+        'The historic Kashmir sapphire mines operated primarily between 1882 and 1887; genuine specimens are virtually finite.'
+      ]
+    },
+    {
+      id: 'jewelry-fine-materials-alloys',
+      title: 'Noble Metallurgical Specimen: 18K Gold & Platinum 950',
+      category: 'Jewelry',
+      subcategory: 'Materials',
+      type: 'Jewelry',
+      tagline: 'Master goldsmith reference alloy ingot: 750 Yellow Gold, Rose Gold & 950 Platinum',
+      image: 'assets/images/hero-jewelry-ring.jpg',
+      priceGuide: 'Metallurgy Guide Specimen',
+      badge: 'Master Reference',
+      rating: 4.9,
+      overview: 'An indispensable physical educational reference detailing the micro-crystal grain structures, Vickers hardness ratings, and heirloom patina evolution of 18-karat gold alloys and platinum.',
+      specs: {
+        metal: 'Platinum 950, 18K Yellow Gold (750), 18K Rose Gold (750)',
+        gemstone: 'Optical Reference Prism Accents',
+        caratWeight: '75.0 grams solid bullion casting',
+        cut: 'Machined & Hand-Chamfered Bullion Ingot',
+        colorGrade: '750 Gold Standard / 950 Platinum Hallmark',
+        clarity: 'Zero-Porosity Vacuum Cast Metal',
+        dimensions: '50 mm x 30 mm x 4 mm',
+        clasp: 'Collector Presentation Case Included'
+      },
+      materials: [
+        { name: 'Platinum 950 / Ruthenium', desc: '95% Pt alloyed with Ru for enhanced tensile hardness and scratch resistance.' },
+        { name: '18K 3N Yellow Gold', desc: '75% Au, 12.5% Ag, 12.5% Cu balanced for timeless imperial warmth.' }
+      ],
+      care: [
+        'Clean with specialized micro-fiber polishing cloths.',
+        'Preserve historical patina on vintage pieces by avoiding aggressive machine buffing.'
+      ],
+      thingsToKnow: [
+        'Platinum displaces metal on surface scratches rather than losing volume, allowing easy re-burnishing.'
       ]
     }
   ],

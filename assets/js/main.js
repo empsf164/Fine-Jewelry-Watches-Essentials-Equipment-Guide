@@ -83,12 +83,72 @@ function initMobileNavigation() {
    -------------------------------------------------------------------------- */
 function highlightActiveNavLink() {
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-link, .mobile-nav-links a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
+  const params = new URLSearchParams(window.location.search);
+  const catParam = (params.get('cat') || '').toLowerCase();
+  const typeParam = (params.get('type') || '').toLowerCase();
+  const idParam = (params.get('id') || '').toLowerCase();
+
+  // Reset existing active classes
+  document.querySelectorAll('.nav-link, .mobile-accordion-toggle, .mobile-nav-links a').forEach(link => {
+    link.classList.remove('active');
   });
+
+  const watchCategories = ['watches', 'mechanical', 'automatic', 'quartz', 'dress-watches', 'dive-watches', 'chronographs', 'complications'];
+  const jewelryCategories = ['jewelry', 'rings', 'necklaces', 'earrings', 'bracelets', 'brooches', 'materials', 'gemstones'];
+
+  // Determine logical active section
+  let activeSection = null;
+  if (currentPath === 'index.html' || currentPath === '') {
+    activeSection = 'home';
+  } else if (currentPath === 'about.html') {
+    activeSection = 'about';
+  } else if (currentPath === 'essentials.html' || catParam === 'essentials' || typeParam === 'essentials' || idParam.startsWith('essential-')) {
+    activeSection = 'essentials';
+  } else if (currentPath === 'guides.html' || currentPath === 'guide-details.html') {
+    activeSection = 'guides';
+  } else if (currentPath === 'contact.html') {
+    activeSection = 'contact';
+  } else if (watchCategories.includes(catParam) || typeParam === 'watches' || idParam.startsWith('watch-')) {
+    activeSection = 'watches';
+  } else if (jewelryCategories.includes(catParam) || typeParam === 'jewelry' || idParam.startsWith('jewelry-')) {
+    activeSection = 'jewelry';
+  } else if (currentPath === 'discover.html') {
+    activeSection = 'jewelry'; // default fallback for discover
+  }
+
+  // Apply active class to desktop and mobile nav
+  if (activeSection === 'home') {
+    document.querySelectorAll('a[href="index.html"].nav-link, a[href="index.html"].mobile-accordion-toggle').forEach(el => el.classList.add('active'));
+  } else if (activeSection === 'about') {
+    document.querySelectorAll('a[href="about.html"].nav-link, a[href="about.html"].mobile-accordion-toggle').forEach(el => el.classList.add('active'));
+  } else if (activeSection === 'watches') {
+    document.querySelectorAll('.nav-link').forEach(el => {
+      if (el.textContent.toLowerCase().includes('watches')) el.classList.add('active');
+    });
+    // In mobile drawer open watches accordion if on watches page
+    const watchToggle = Array.from(document.querySelectorAll('.mobile-accordion-toggle')).find(b => b.textContent.toLowerCase().includes('watches'));
+    if (watchToggle) {
+      watchToggle.classList.add('active');
+      const content = watchToggle.nextElementSibling;
+      if (content && content.classList.contains('mobile-accordion-content')) {
+        content.classList.add('open');
+      }
+    }
+  } else if (activeSection === 'jewelry') {
+    document.querySelectorAll('.nav-link').forEach(el => {
+      if (el.textContent.toLowerCase().includes('jewelry')) el.classList.add('active');
+    });
+    const jewToggle = Array.from(document.querySelectorAll('.mobile-accordion-toggle')).find(b => b.textContent.toLowerCase().includes('jewelry'));
+    if (jewToggle) {
+      jewToggle.classList.add('active');
+    }
+  } else if (activeSection === 'essentials') {
+    document.querySelectorAll('a[href="essentials.html"].nav-link, a[href="essentials.html"].mobile-accordion-toggle').forEach(el => el.classList.add('active'));
+  } else if (activeSection === 'guides') {
+    document.querySelectorAll('a[href="guides.html"].nav-link, a[href="guides.html"].mobile-accordion-toggle').forEach(el => el.classList.add('active'));
+  } else if (activeSection === 'contact') {
+    document.querySelectorAll('a[href="contact.html"].nav-link, a[href="contact.html"].mobile-accordion-toggle').forEach(el => el.classList.add('active'));
+  }
 }
 
 /* --------------------------------------------------------------------------

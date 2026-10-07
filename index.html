@@ -32,6 +32,8 @@
           <a href="index.html" class="nav-link active">Home</a>
         </div>
 
+        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
+
         <!-- Jewelry Dropdown -->
         <div class="nav-item">
           <a href="discover.html?cat=jewelry" class="nav-link">
@@ -126,7 +128,6 @@
         </div>
 
         <div class="nav-item"><a href="guides.html" class="nav-link">Guides</a></div>
-        <div class="nav-item"><a href="about.html" class="nav-link">About</a></div>
         <div class="nav-item"><a href="contact.html" class="nav-link">Contact</a></div>
       </nav>
 
@@ -163,6 +164,7 @@
     </div>
     <ul class="mobile-nav-links">
       <li><a href="index.html" class="mobile-accordion-toggle active">Home</a></li>
+      <li><a href="about.html" class="mobile-accordion-toggle">About</a></li>
       <li>
         <button type="button" class="mobile-accordion-toggle">Jewelry <span>▾</span></button>
         <div class="mobile-accordion-content">
@@ -194,7 +196,6 @@
       </li>
       <li><a href="essentials.html" class="mobile-accordion-toggle">Essentials</a></li>
       <li><a href="guides.html" class="mobile-accordion-toggle">Guides</a></li>
-      <li><a href="about.html" class="mobile-accordion-toggle">About</a></li>
       <li><a href="contact.html" class="mobile-accordion-toggle">Contact</a></li>
     </ul>
     <div class="mobile-nav-footer">
@@ -224,16 +225,16 @@
           </div>
         </div>
 
-        <!-- Hero Macro Visual Showcase -->
-        <div style="margin-top: 4.5rem; border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--border-accent); box-shadow: var(--shadow-lg); position: relative;">
-          <img src="assets/images/hero-watch-movement.jpg" alt="Macro view of Calibre GG-1 Skeleton Tourbillon Mechanical Movement" style="width: 100%; height: 540px; object-fit: cover;">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; background: linear-gradient(0deg, rgba(8,9,10,0.95) 0%, transparent 100%); display: flex; justify-content: space-between; align-items: flex-end;">
+        <!-- Hero Macro Visual Showcase with High Contrast Overlay -->
+        <div class="hero-macro-showcase">
+          <img src="assets/images/hero-watch-movement.jpg" alt="Macro view of Calibre GG-1 Skeleton Tourbillon Mechanical Movement">
+          <div class="hero-macro-overlay">
             <div>
               <span class="eyebrow" style="color: var(--accent-gold); margin-bottom: 0.25rem;">Haute Horlogerie Focus</span>
-              <h3 style="color: #fff; font-size: 1.5rem;">Calibre GG-1 Skeleton Tourbillon</h3>
-              <p style="color: rgba(255,255,255,0.7); font-size: 0.85rem; max-width: 480px;">Hand-beveled titanium bridges with 60-second revolving escapement cage.</p>
+              <h3>Calibre GG-1 Skeleton Tourbillon</h3>
+              <p>Hand-beveled titanium bridges with 60-second revolving escapement cage.</p>
             </div>
-            <a href="details.html?id=watch-skeleton-tourbillon&type=watches" class="btn btn-outline btn-sm" style="border-color: rgba(255,255,255,0.3); color: #fff;">Inspect Calibre &rarr;</a>
+            <a href="details.html?id=watch-skeleton-tourbillon&type=watches" class="btn btn-outline btn-sm" style="border-color: rgba(255,255,255,0.4); color: #fff; background: rgba(0,0,0,0.3); backdrop-filter: blur(4px);">Inspect Calibre &rarr;</a>
           </div>
         </div>
       </div>
@@ -461,7 +462,7 @@
     </section>
 
     <!-- 6. MATERIALS & GEMSTONES EXPLORER -->
-    <section class="section">
+    <section id="materials-gemstones-section" class="section">
       <div class="container">
         <div class="section-header">
           <span class="eyebrow">Gemological Intelligence</span>
@@ -603,7 +604,7 @@
         <p class="lead-text" style="margin-bottom: 2.5rem;">
           Join thousands of horologists, fine jewelry enthusiasts, and discerning collectors who rely on Aurelle for technical clarity and unbiased reference specifications.
         </p>
-        <div class="flex-center gap-2">
+        <div class="cta-action-group flex-center gap-2">
           <a href="signup.html" class="btn btn-primary">Start Exploring & Join</a>
           <a href="discover.html" class="btn btn-outline">Explore Catalog</a>
         </div>

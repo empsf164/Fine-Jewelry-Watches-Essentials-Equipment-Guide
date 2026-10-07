@@ -22,6 +22,21 @@ const AURELLE_FILTERS = (function () {
     const params = new URLSearchParams(window.location.search);
     if (params.get('cat')) {
       activeCategory = params.get('cat').toLowerCase();
+      const norm = activeCategory.replace(/[-\s_]/g, '');
+      let matchedAny = false;
+      document.querySelectorAll('[data-filter-cat]').forEach(btn => {
+        const btnCat = btn.getAttribute('data-filter-cat').toLowerCase().replace(/[-\s_]/g, '');
+        if (btnCat === norm) {
+          btn.classList.add('active');
+          matchedAny = true;
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      if (!matchedAny) {
+        const allBtn = document.querySelector('[data-filter-cat="all"]');
+        if (allBtn) allBtn.classList.remove('active');
+      }
     }
     if (params.get('q')) {
       searchQuery = params.get('q');
@@ -154,8 +169,34 @@ const AURELLE_FILTERS = (function () {
 
     // Filter by Category Tab
     if (activeCategory !== 'all') {
+      const normCat = activeCategory.toLowerCase().replace(/[-\s_]/g, '');
       allItems = allItems.filter(item => {
-        return item.category.toLowerCase() === activeCategory || (item.subcategory && item.subcategory.toLowerCase() === activeCategory);
+        const itemCat = (item.category || '').toLowerCase().replace(/[-\s_]/g, '');
+        const itemSub = (item.subcategory || '').toLowerCase().replace(/[-\s_]/g, '');
+        
+        // Exact normalized match on category or subcategory
+        if (itemCat === normCat || itemSub === normCat) return true;
+        
+        // Handle special aliases & singular/plural variations
+        if (normCat === 'watches' && itemCat === 'watches') return true;
+        if (normCat === 'jewelry' && itemCat === 'jewelry') return true;
+        if (normCat === 'essentials' && itemCat === 'essentials') return true;
+        if (normCat === 'rings' && (itemSub.includes('ring') || item.title.toLowerCase().includes('ring'))) return true;
+        if (normCat === 'necklaces' && (itemSub.includes('necklace') || item.title.toLowerCase().includes('necklace') || item.title.toLowerCase().includes('collar') || item.title.toLowerCase().includes('pendant'))) return true;
+        if (normCat === 'earrings' && (itemSub.includes('earring') || item.title.toLowerCase().includes('earring') || item.title.toLowerCase().includes('drop'))) return true;
+        if (normCat === 'bracelets' && (itemSub.includes('bracelet') || item.title.toLowerCase().includes('bracelet') || item.title.toLowerCase().includes('cuff'))) return true;
+        if (normCat === 'brooches' && (itemSub.includes('brooch') || item.title.toLowerCase().includes('brooch') || item.title.toLowerCase().includes('pin'))) return true;
+        if (normCat === 'materials' && (itemSub.includes('material') || item.materials?.length > 0)) return true;
+        if (normCat === 'gemstones' && (itemSub.includes('gemstone') || Boolean(item.specs?.gemstone))) return true;
+        if (normCat === 'dresswatches' && itemSub.includes('dress')) return true;
+        if (normCat === 'divewatches' && itemSub.includes('dive')) return true;
+        if (normCat === 'chronographs' && (itemSub.includes('chrono') || (item.specs?.complications || '').toLowerCase().includes('chrono'))) return true;
+        if (normCat === 'mechanical' && (itemSub.includes('mechanic') || (item.specs?.movement || '').toLowerCase().includes('manual'))) return true;
+        if (normCat === 'automatic' && (itemSub.includes('automat') || (item.specs?.movement || '').toLowerCase().includes('auto'))) return true;
+        if (normCat === 'quartz' && (itemSub.includes('quartz') || (item.specs?.movement || '').toLowerCase().includes('quartz'))) return true;
+        if (normCat === 'complications' && (itemSub.includes('complication') || (item.specs?.complications && item.specs.complications !== 'None'))) return true;
+
+        return false;
       });
     }
 

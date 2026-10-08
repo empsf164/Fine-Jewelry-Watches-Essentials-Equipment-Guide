@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgJewelry" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#18131c"/>
+      <stop offset="60%" stop-color="#0e0a12"/>
+      <stop offset="100%" stop-color="#040206"/>
+    </radialGradient>
+    <radialGradient id="diamondSpark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#e0f2fe"/>
+      <stop offset="70%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </radialGradient>
+    <linearGradient id="whiteGoldProng" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#cbd5e1"/>
+      <stop offset="70%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <filter id="diamondGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Dark Velvet Luxury Background -->
+  <rect width="800" height="600" fill="url(#bgJewelry)"/>
+
+  <!-- Soft studio ambient highlight -->
+  <ellipse cx="400" cy="300" rx="320" ry="200" fill="#a855f7" opacity="0.04" filter="blur(70px)"/>
+  <ellipse cx="400" cy="300" rx="260" ry="160" fill="#38bdf8" opacity="0.04" filter="blur(60px)"/>
+
+  <!-- Flowing Diamond Tennis Bracelet S-Curve -->
+  <g filter="url(#softShadow)">
+
+    <!-- Articulated Links with 4-Prong Settings & Brilliant Cut Diamonds -->
+    <!-- We draw an elegant graceful flowing curve across the canvas -->
+    
+    <!-- Link 1 -->
+    <g transform="translate(140, 360)">
+      <circle cx="0" cy="0" r="14" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="11" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-11 11,0 0,11 -11,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <!-- Link 2 -->
+    <g transform="translate(170, 335)">
+      <circle cx="0" cy="0" r="14" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="11" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-11 11,0 0,11 -11,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <!-- Link 3 -->
+    <g transform="translate(205, 305)">
+      <circle cx="0" cy="0" r="15" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="12" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <!-- Link 4 -->
+    <g transform="translate(245, 275)">
+      <circle cx="0" cy="0" r="15" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="12" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <!-- Link 5 -->
+    <g transform="translate(290, 250)">
+      <circle cx="0" cy="0" r="16" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="13" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Link 6 -->
+    <g transform="translate(340, 235)">
+      <circle cx="0" cy="0" r="16" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="13" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Link 7 (Apex Top) -->
+    <g transform="translate(395, 230)">
+      <circle cx="0" cy="0" r="17" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="14" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-14 14,0 0,14 -14,0" fill="#ffffff" opacity="0.9"/>
+      <!-- Extra Sparkle Star -->
+      <path d="M 0 -22 L 3 -6 L 19 0 L 3 6 L 0 22 L -3 6 L -19 0 L -3 -6 Z" fill="#ffffff" filter="url(#diamondGlow)"/>
+    </g>
+    <!-- Link 8 -->
+    <g transform="translate(450, 240)">
+      <circle cx="0" cy="0" r="16" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="13" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Link 9 -->
+    <g transform="translate(500, 260)">
+      <circle cx="0" cy="0" r="16" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="13" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Link 10 -->
+    <g transform="translate(545, 290)">
+      <circle cx="0" cy="0" r="15" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="12" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <!-- Link 11 -->
+    <g transform="translate(585, 325)">
+      <circle cx="0" cy="0" r="15" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="12" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+    <!-- Link 12 -->
+    <g transform="translate(615, 365)">
+      <circle cx="0" cy="0" r="14" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="11" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-11 11,0 0,11 -11,0" fill="#ffffff" opacity="0.75"/>
+    </g>
+
+    <!-- Secondary Loop of Bracelet Falling in Foreground -->
+    <!-- Link 13 -->
+    <g transform="translate(575, 410)">
+      <circle cx="0" cy="0" r="14" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="11" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+    </g>
+    <!-- Link 14 -->
+    <g transform="translate(525, 435)">
+      <circle cx="0" cy="0" r="15" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="12" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+    </g>
+    <!-- Link 15 -->
+    <g transform="translate(470, 445)">
+      <circle cx="0" cy="0" r="16" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="13" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#ffffff" opacity="0.8"/>
+    </g>
+    <!-- Link 16 -->
+    <g transform="translate(415, 440)">
+      <circle cx="0" cy="0" r="16" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="13" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#ffffff" opacity="0.8"/>
+      <!-- Sparkle Star -->
+      <path d="M 0 -18 L 2.5 -5 L 15 0 L 2.5 5 L 0 18 L -2.5 5 L -15 0 L -2.5 -5 Z" fill="#ffffff" filter="url(#diamondGlow)"/>
+    </g>
+    <!-- Link 17 -->
+    <g transform="translate(360, 420)">
+      <circle cx="0" cy="0" r="15" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="12" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+    </g>
+    <!-- Link 18 -->
+    <g transform="translate(310, 390)">
+      <circle cx="0" cy="0" r="14" fill="url(#whiteGoldProng)"/>
+      <circle cx="0" cy="0" r="11" fill="url(#diamondSpark)" filter="url(#diamondGlow)"/>
+    </g>
+
+    <!-- Hidden Box Lock Clasp with Safety Clip -->
+    <g transform="translate(255, 365)">
+      <rect x="-12" y="-9" width="24" height="18" rx="3" fill="url(#whiteGoldProng)"/>
+      <circle cx="-3" cy="0" r="2.5" fill="#475569"/>
+      <path d="M 6 -6 L 10 -6 L 10 6 L 6 6" fill="none" stroke="#64748b" stroke-width="1.5"/>
+    </g>
+  </g>
+
+  <!-- Luxury Caption Tag -->
+  <text x="400" y="525" fill="#d4af37" font-family="'Playfair Display', serif" font-weight="700" font-size="16" letter-spacing="4" text-anchor="middle">LUMIÈRE 10.0 CT</text>
+  <text x="400" y="542" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">ROUND BRILLIANT DIAMOND TENNIS BRACELET · 18K WHITE GOLD</text>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgBrooch" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#121824"/>
+      <stop offset="60%" stop-color="#090d14"/>
+      <stop offset="100%" stop-color="#030508"/>
+    </radialGradient>
+    <radialGradient id="kashmirVelvet" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="35%" stop-color="#2563eb"/>
+      <stop offset="70%" stop-color="#1d4ed8"/>
+      <stop offset="95%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </radialGradient>
+    <linearGradient id="platinumFiligree" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#cbd5e1"/>
+      <stop offset="60%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="broochShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+    <filter id="sapphireSparkle" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgBrooch)"/>
+
+  <!-- Blue Velvet Ambient Flare -->
+  <ellipse cx="400" cy="285" rx="300" ry="180" fill="#2563eb" opacity="0.06" filter="blur(70px)"/>
+
+  <g filter="url(#broochShadow)">
+
+    <!-- Art Deco / Belle Époque Platinum Openwork Geometric Frame -->
+    <g transform="translate(400, 280)">
+      
+      <!-- Outer Filigree Oval / Hexagonal Base -->
+      <path d="M -260 0 C -260 -90 -160 -150 0 -150 C 160 -150 260 -90 260 0 C 260 90 160 150 0 150 C -160 150 -260 90 -260 0 Z" fill="none" stroke="url(#platinumFiligree)" stroke-width="5"/>
+      <path d="M -240 0 C -240 -80 -150 -130 0 -130 C 150 -130 240 -80 240 0 C 240 80 150 130 0 130 C -150 130 -240 80 -240 0 Z" fill="none" stroke="url(#platinumFiligree)" stroke-width="2" stroke-dasharray="3 3"/>
+
+      <!-- Geometric Pierced Openwork Lattice Wings -->
+      <!-- Left Lattice -->
+      <g>
+        <line x1="-240" y1="0" x2="-80" y2="0" stroke="url(#platinumFiligree)" stroke-width="3"/>
+        <line x1="-220" y1="-40" x2="-80" y2="-40" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <line x1="-220" y1="40" x2="-80" y2="40" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        
+        <circle cx="-190" cy="0" r="8" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <circle cx="-150" cy="-35" r="7" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <circle cx="-150" cy="35" r="7" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <circle cx="-110" cy="0" r="9" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        
+        <!-- Baguette Diamond Bars -->
+        <rect x="-170" y="-12" width="20" height="24" rx="2" fill="#e0f2fe" stroke="url(#platinumFiligree)" stroke-width="1.5"/>
+        <rect x="-135" y="-55" width="16" height="22" rx="2" fill="#e0f2fe" stroke="url(#platinumFiligree)" stroke-width="1.5" transform="rotate(25 -127 -44)"/>
+        <rect x="-135" y="33" width="16" height="22" rx="2" fill="#e0f2fe" stroke="url(#platinumFiligree)" stroke-width="1.5" transform="rotate(-25 -127 44)"/>
+      </g>
+
+      <!-- Right Lattice (Mirrored) -->
+      <g>
+        <line x1="240" y1="0" x2="80" y2="0" stroke="url(#platinumFiligree)" stroke-width="3"/>
+        <line x1="220" y1="-40" x2="80" y2="-40" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <line x1="220" y1="40" x2="80" y2="40" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        
+        <circle cx="190" cy="0" r="8" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <circle cx="150" cy="-35" r="7" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <circle cx="150" cy="35" r="7" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+        <circle cx="110" cy="0" r="9" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="2"/>
+
+        <rect x="150" y="-12" width="20" height="24" rx="2" fill="#e0f2fe" stroke="url(#platinumFiligree)" stroke-width="1.5"/>
+        <rect x="119" y="-55" width="16" height="22" rx="2" fill="#e0f2fe" stroke="url(#platinumFiligree)" stroke-width="1.5" transform="rotate(-25 127 -44)"/>
+        <rect x="119" y="33" width="16" height="22" rx="2" fill="#e0f2fe" stroke="url(#platinumFiligree)" stroke-width="1.5" transform="rotate(25 127 44)"/>
+      </g>
+
+      <!-- Central Calibre-Cut Sapphire Halo Frame -->
+      <rect x="-75" y="-60" width="150" height="120" rx="30" fill="none" stroke="#1e3a8a" stroke-width="14"/>
+      <rect x="-75" y="-60" width="150" height="120" rx="30" fill="none" stroke="url(#platinumFiligree)" stroke-width="2"/>
+
+      <!-- Diamond Milgrain Inner Border -->
+      <rect x="-65" y="-50" width="130" height="100" rx="22" fill="#ffffff" stroke="url(#platinumFiligree)" stroke-width="3"/>
+
+      <!-- 5.10 ct Kashmir Sapphire Centerpiece (Cushion Cut with Velvety Glow) -->
+      <rect x="-56" y="-42" width="112" height="84" rx="18" fill="url(#kashmirVelvet)" stroke="#93c5fd" stroke-width="1.5"/>
+
+      <!-- Sapphire Internal Facet Geometry -->
+      <polygon points="0,-42 56,0 0,42 -56,0" fill="#3b82f6" opacity="0.4"/>
+      <polygon points="-30,-22 30,-22 45,0 30,22 -30,22 -45,0" fill="none" stroke="#93c5fd" stroke-width="1.5" opacity="0.75"/>
+      <line x1="-56" y1="-42" x2="-30" y2="-22" stroke="#93c5fd" stroke-width="1.5" opacity="0.75"/>
+      <line x1="56" y1="-42" x2="30" y2="-22" stroke="#93c5fd" stroke-width="1.5" opacity="0.75"/>
+      <line x1="56" y1="42" x2="30" y2="22" stroke="#93c5fd" stroke-width="1.5" opacity="0.75"/>
+      <line x1="-56" y1="42" x2="-30" y2="22" stroke="#93c5fd" stroke-width="1.5" opacity="0.75"/>
+
+      <!-- Velvety Rutile Silk Highlights -->
+      <circle cx="-18" cy="-14" r="6" fill="#ffffff" opacity="0.8" filter="url(#sapphireSparkle)"/>
+      <circle cx="22" cy="12" r="4" fill="#93c5fd" opacity="0.9" filter="url(#sapphireSparkle)"/>
+
+      <!-- 4 Platinum Corner Prongs -->
+      <circle cx="-50" cy="-36" r="4.5" fill="url(#platinumFiligree)"/>
+      <circle cx="50" cy="-36" r="4.5" fill="url(#platinumFiligree)"/>
+      <circle cx="50" cy="36" r="4.5" fill="url(#platinumFiligree)"/>
+      <circle cx="-50" cy="36" r="4.5" fill="url(#platinumFiligree)"/>
+    </g>
+
+  </g>
+
+  <!-- Caption -->
+  <text x="400" y="515" fill="#93c5fd" font-family="'Playfair Display', serif" font-weight="700" font-size="16" letter-spacing="4" text-anchor="middle">BELLE ÉPOQUE BROOCH</text>
+  <text x="400" y="533" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">5.10 CT KASHMIR CORNFLOWER SAPPHIRE · ART DECO PLATINUM OPENWORK</text>
+</svg>

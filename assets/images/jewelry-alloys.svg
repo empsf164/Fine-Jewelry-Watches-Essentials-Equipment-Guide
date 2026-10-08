@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgSlate" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="60%" stop-color="#0c0a09"/>
+      <stop offset="100%" stop-color="#020202"/>
+    </radialGradient>
+    
+    <!-- 18K Yellow Gold (750) Bullion Gradient -->
+    <linearGradient id="ingotYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="25%" stop-color="#eab308"/>
+      <stop offset="50%" stop-color="#fde047"/>
+      <stop offset="75%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#ca8a04"/>
+    </linearGradient>
+
+    <!-- 18K Rose Gold (750) Bullion Gradient -->
+    <linearGradient id="ingotRose" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="25%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#ffedd5"/>
+      <stop offset="75%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+
+    <!-- Platinum 950 Bullion Gradient -->
+    <linearGradient id="ingotPlat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#f8fafc"/>
+      <stop offset="75%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <filter id="ingotShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgSlate)"/>
+
+  <!-- Warm Metallic Flare -->
+  <circle cx="400" cy="300" r="280" fill="#eab308" opacity="0.04" filter="blur(80px)"/>
+
+  <g filter="url(#ingotShadow)">
+
+    <!-- INGOT 1: PLATINUM 950 (Left) -->
+    <g transform="translate(160, 150)">
+      <!-- 3D Beveled Bullion Block -->
+      <polygon points="0,30 20,0 160,0 140,30" fill="#ffffff" opacity="0.6"/>
+      <polygon points="140,30 160,0 160,200 140,230" fill="#64748b"/>
+      <polygon points="0,30 140,30 140,230 0,230" fill="url(#ingotPlat)"/>
+
+      <!-- Stamped Hallmarks & Assay -->
+      <text x="70" y="70" fill="#0f172a" font-family="'Playfair Display', serif" font-weight="700" font-size="14" letter-spacing="3" text-anchor="middle">AURELLE</text>
+      <line x1="30" y1="85" x2="110" y2="85" stroke="#475569" stroke-width="1"/>
+      
+      <circle cx="70" cy="115" r="16" fill="none" stroke="#475569" stroke-width="1.5"/>
+      <text x="70" y="120" fill="#0f172a" font-family="'Inter', sans-serif" font-weight="700" font-size="11" text-anchor="middle">Pt</text>
+      
+      <text x="70" y="155" fill="#0f172a" font-family="'Inter', sans-serif" font-weight="800" font-size="20" letter-spacing="2" text-anchor="middle">950</text>
+      <text x="70" y="175" fill="#475569" font-family="'Inter', sans-serif" font-weight="600" font-size="8" letter-spacing="2" text-anchor="middle">PURE PLATINUM</text>
+      <text x="70" y="210" fill="#64748b" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">100g · FEINGUSS</text>
+    </g>
+
+    <!-- INGOT 2: 18K YELLOW GOLD 750 (Center - Prominent) -->
+    <g transform="translate(330, 130)">
+      <!-- 3D Beveled Bullion Block -->
+      <polygon points="0,30 20,0 160,0 140,30" fill="#fef08a" opacity="0.7"/>
+      <polygon points="140,30 160,0 160,220 140,250" fill="#a16207"/>
+      <polygon points="0,30 140,30 140,250 0,250" fill="url(#ingotYellow)"/>
+
+      <!-- Stamped Hallmarks -->
+      <text x="70" y="70" fill="#451a03" font-family="'Playfair Display', serif" font-weight="700" font-size="15" letter-spacing="3" text-anchor="middle">AURELLE</text>
+      <line x1="30" y1="85" x2="110" y2="85" stroke="#78350f" stroke-width="1"/>
+
+      <!-- Swiss Helvetia / Scales Assay Stamp -->
+      <circle cx="70" cy="120" r="18" fill="none" stroke="#78350f" stroke-width="1.5"/>
+      <text x="70" y="125" fill="#451a03" font-family="'Inter', sans-serif" font-weight="700" font-size="12" text-anchor="middle">Au</text>
+
+      <text x="70" y="165" fill="#451a03" font-family="'Inter', sans-serif" font-weight="800" font-size="22" letter-spacing="2" text-anchor="middle">750</text>
+      <text x="70" y="185" fill="#78350f" font-family="'Inter', sans-serif" font-weight="700" font-size="9" letter-spacing="2" text-anchor="middle">18K YELLOW GOLD</text>
+      <text x="70" y="225" fill="#78350f" font-family="'Inter', sans-serif" font-size="8.5" text-anchor="middle">100g · ESSAYEUR</text>
+    </g>
+
+    <!-- INGOT 3: 18K ROSE GOLD 750 (Right) -->
+    <g transform="translate(500, 150)">
+      <!-- 3D Beveled Bullion Block -->
+      <polygon points="0,30 20,0 160,0 140,30" fill="#ffedd5" opacity="0.6"/>
+      <polygon points="140,30 160,0 160,200 140,230" fill="#9a3412"/>
+      <polygon points="0,30 140,30 140,230 0,230" fill="url(#ingotRose)"/>
+
+      <!-- Stamped Hallmarks -->
+      <text x="70" y="70" fill="#431407" font-family="'Playfair Display', serif" font-weight="700" font-size="14" letter-spacing="3" text-anchor="middle">AURELLE</text>
+      <line x1="30" y1="85" x2="110" y2="85" stroke="#9a3412" stroke-width="1"/>
+
+      <circle cx="70" cy="115" r="16" fill="none" stroke="#9a3412" stroke-width="1.5"/>
+      <text x="70" y="120" fill="#431407" font-family="'Inter', sans-serif" font-weight="700" font-size="11" text-anchor="middle">Au</text>
+
+      <text x="70" y="155" fill="#431407" font-family="'Inter', sans-serif" font-weight="800" font-size="20" letter-spacing="2" text-anchor="middle">750</text>
+      <text x="70" y="175" fill="#9a3412" font-family="'Inter', sans-serif" font-weight="600" font-size="8" letter-spacing="2" text-anchor="middle">18K 4N ROSE GOLD</text>
+      <text x="70" y="210" fill="#9a3412" font-family="'Inter', sans-serif" font-size="8" text-anchor="middle">100g · ALLOY SPEC</text>
+    </g>
+
+  </g>
+
+  <!-- Typography Description -->
+  <text x="400" y="515" fill="#fde047" font-family="'Playfair Display', serif" font-weight="700" font-size="16" letter-spacing="4" text-anchor="middle">NOBLE METALLURGICAL ASSAY</text>
+  <text x="400" y="533" fill="#cbd5e1" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">PLATINUM 950 · 18K 3N YELLOW GOLD (750) · 18K 4N ROSE GOLD (750)</text>
+</svg>

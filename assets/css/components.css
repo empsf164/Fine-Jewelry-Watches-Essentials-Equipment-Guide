@@ -902,8 +902,12 @@
 }
 
 .movement-schematic-box svg {
-  max-width: 100%;
-  height: 280px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  max-height: 280px;
+  display: block;
+  margin: 0 auto;
 }
 
 .movement-specs-list {
@@ -1631,4 +1635,83 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* --------------------------------------------------------------------------
+   18. CONTACT PAGE FULL-WIDTH FAQ ACCORDION
+   -------------------------------------------------------------------------- */
+.contact-faq-section {
+  width: 100%;
+}
+
+.contact-faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.contact-faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-faq-item:hover {
+  border-color: var(--border-accent);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-faq-item[open] {
+  border-color: var(--accent-gold);
+}
+
+.contact-faq-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.35rem 1.75rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-faq-summary::-webkit-details-marker {
+  display: none;
+}
+
+.contact-faq-summary::after {
+  content: '+';
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: var(--accent-gold);
+  transition: transform var(--transition-normal);
+  line-height: 1;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.contact-faq-item[open] .contact-faq-summary::after {
+  content: '−';
+  transform: rotate(180deg);
+}
+
+.contact-faq-body {
+  padding: 0 1.75rem 1.5rem 1.75rem;
+  font-size: 0.925rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.25rem;
+  margin-top: 0;
+}
+
 

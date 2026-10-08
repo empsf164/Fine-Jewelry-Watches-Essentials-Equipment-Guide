@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgRuby" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1f0f14"/>
+      <stop offset="60%" stop-color="#100508"/>
+      <stop offset="100%" stop-color="#050102"/>
+    </radialGradient>
+    <radialGradient id="pigeonBlood" cx="42%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#ff4d6d"/>
+      <stop offset="30%" stop-color="#e11d48"/>
+      <stop offset="65%" stop-color="#be123c"/>
+      <stop offset="88%" stop-color="#881337"/>
+      <stop offset="100%" stop-color="#4c0519"/>
+    </radialGradient>
+    <linearGradient id="yellowGoldSetting" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="40%" stop-color="#d4af37"/>
+      <stop offset="75%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#ffd966"/>
+    </linearGradient>
+    <linearGradient id="platinumBail" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+    <radialGradient id="diaHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </radialGradient>
+    <filter id="rubyGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="rubyShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+    <filter id="sparkle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgRuby)"/>
+
+  <!-- Crimson Fluorescence Ambient Flare -->
+  <circle cx="400" cy="310" r="280" fill="#e11d48" opacity="0.08" filter="blur(70px)"/>
+
+  <g filter="url(#rubyShadow)">
+
+    <!-- Fine Platinum Chain draping from top -->
+    <path d="M 280 40 Q 360 120 395 160" fill="none" stroke="url(#platinumBail)" stroke-width="2" stroke-dasharray="3 2"/>
+    <path d="M 520 40 Q 440 120 405 160" fill="none" stroke="url(#platinumBail)" stroke-width="2" stroke-dasharray="3 2"/>
+
+    <!-- Articulated Diamond Bail (Pendant Hook) -->
+    <g transform="translate(400, 160)">
+      <!-- Bail Ring -->
+      <path d="M -14 0 C -14 -22 14 -22 14 0 C 14 18 -14 18 -14 0 Z" fill="url(#platinumBail)"/>
+      <circle cx="0" cy="-6" r="5" fill="#050102"/>
+      <!-- Pear Diamond in Bail -->
+      <polygon points="0,0 -8,-14 8,-14" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="0" cy="-9" r="2" fill="#ffffff" filter="url(#sparkle)"/>
+    </g>
+
+    <!-- Main Ruby Drop Pendant Assembly -->
+    <g transform="translate(400, 310)">
+
+      <!-- Outer Diamond Halo (Pear & Brilliant Diamonds) -->
+      <!-- Top Halo Diamonds -->
+      <circle cx="0" cy="-125" r="10" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="-38" cy="-115" r="10" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="38" cy="-115" r="10" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <!-- Side Halo Diamonds -->
+      <circle cx="-75" cy="-80" r="11" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="75" cy="-80" r="11" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="-95" cy="-35" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="95" cy="-35" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="-100" cy="15" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="100" cy="15" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="-88" cy="65" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="88" cy="65" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <!-- Bottom Halo Diamonds -->
+      <circle cx="-55" cy="105" r="11" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="55" cy="105" r="11" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+      <circle cx="0" cy="120" r="12" fill="url(#diaHalo)" stroke="url(#platinumBail)" stroke-width="1.5"/>
+
+      <!-- Diamond Sparkles -->
+      <path d="M 0 -135 L 2 -127 L 10 -125 L 2 -123 L 0 -115 L -2 -123 L -10 -125 L -2 -127 Z" fill="#ffffff" filter="url(#sparkle)"/>
+      <path d="M 0 110 L 2 118 L 10 120 L 2 122 L 0 130 L -2 122 L -10 120 L -2 118 Z" fill="#ffffff" filter="url(#sparkle)"/>
+
+      <!-- 18K Yellow Gold Inner Bezel Mounting -->
+      <ellipse cx="0" cy="0" rx="82" ry="102" fill="url(#yellowGoldSetting)"/>
+      <ellipse cx="0" cy="0" rx="74" ry="94" fill="#30030e"/>
+
+      <!-- 4.20 ct Mogok Pigeon Blood Ruby (Oval Brilliant Step Cut) -->
+      <ellipse cx="0" cy="0" rx="70" ry="90" fill="url(#pigeonBlood)" filter="url(#rubyGlow)"/>
+
+      <!-- Ruby Facet Geometry & Internal Fire Refraction -->
+      <polygon points="0,-90 52,-48 70,0 52,48 0,90 -52,48 -70,0 -52,-48" fill="#ff1e4a" opacity="0.4"/>
+      
+      <!-- Table Facet (Octagonal Center) -->
+      <polygon points="-36,-50 36,-50 50,-20 50,20 36,50 -36,50 -50,20 -50,-20" fill="none" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      
+      <!-- Star & Kite Facet Lines -->
+      <line x1="0" y1="-90" x2="0" y2="-50" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      <line x1="0" y1="90" x2="0" y2="50" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      <line x1="-70" y1="0" x2="-50" y2="0" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      <line x1="70" y1="0" x2="50" y2="0" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+
+      <line x1="-52" y1="-48" x2="-36" y2="-50" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      <line x1="52" y1="-48" x2="36" y2="-50" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      <line x1="52" y1="48" x2="36" y2="50" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+      <line x1="-52" y1="48" x2="-36" y2="50" stroke="#fecdd3" stroke-width="1.5" opacity="0.75"/>
+
+      <!-- Primary Brilliance Reflection Highlight -->
+      <ellipse cx="-22" cy="-28" rx="18" ry="10" fill="#ffffff" opacity="0.8" transform="rotate(-30 -22 -28)" filter="url(#sparkle)"/>
+      <circle cx="-18" cy="-24" r="5" fill="#ffffff" filter="url(#sparkle)"/>
+
+      <!-- 4 Gold Corner Prongs -->
+      <circle cx="-46" cy="-60" r="4.5" fill="url(#yellowGoldSetting)"/>
+      <circle cx="46" cy="-60" r="4.5" fill="url(#yellowGoldSetting)"/>
+      <circle cx="46" cy="60" r="4.5" fill="url(#yellowGoldSetting)"/>
+      <circle cx="-46" cy="60" r="4.5" fill="url(#yellowGoldSetting)"/>
+    </g>
+
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="525" fill="#fb7185" font-family="'Playfair Display', serif" font-weight="700" font-size="16" letter-spacing="4" text-anchor="middle">IMPERIAL MOGOK RUBY</text>
+  <text x="400" y="542" fill="#fda4af" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">4.20 CT UNHEATED PIGEON'S BLOOD RUBY · DOUBLE DIAMOND HALO DROP</text>
+</svg>

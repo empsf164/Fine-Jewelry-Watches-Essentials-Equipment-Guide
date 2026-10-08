@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgUltra" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#141923"/>
+      <stop offset="60%" stop-color="#0b0e14"/>
+      <stop offset="100%" stop-color="#040608"/>
+    </radialGradient>
+    <linearGradient id="chassisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="waterBasin" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#0284c7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0.95"/>
+    </radialGradient>
+    <filter id="ultraShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bgUltra)"/>
+  <ellipse cx="400" cy="270" rx="220" ry="120" fill="#38bdf8" opacity="0.08" filter="blur(60px)"/>
+
+  <g filter="url(#ultraShadow)">
+    <!-- Main Ultrasonic Bath Machine Body (3D Rounded Tank) -->
+    <!-- Base Shell -->
+    <rect x="220" y="160" width="360" height="260" rx="28" fill="url(#chassisGrad)" stroke="#475569" stroke-width="2"/>
+
+    <!-- Gold Accent Trim Ring -->
+    <rect x="230" y="170" width="340" height="150" rx="20" fill="none" stroke="#d4af37" stroke-width="2"/>
+
+    <!-- Stainless Steel Transducer Water Tank -->
+    <rect x="240" y="180" width="320" height="130" rx="16" fill="url(#waterBasin)" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- Ultrasonic 42kHz Acoustic Waves -->
+    <ellipse cx="400" cy="245" rx="110" ry="35" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+    <ellipse cx="400" cy="245" rx="75" ry="24" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.85"/>
+    <ellipse cx="400" cy="245" rx="40" ry="12" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.95"/>
+
+    <!-- Micro-bubbles / Cavitation points -->
+    <circle cx="380" cy="235" r="3" fill="#ffffff"/>
+    <circle cx="420" cy="240" r="2.5" fill="#ffffff"/>
+    <circle cx="360" cy="250" r="2" fill="#ffffff"/>
+    <circle cx="440" cy="248" r="3" fill="#ffffff"/>
+
+    <!-- Submerged Platinum Diamond Ring Silhouette in Cleaning Basket -->
+    <g transform="translate(400, 245)">
+      <ellipse cx="0" cy="0" rx="28" ry="16" fill="none" stroke="#ffffff" stroke-width="4"/>
+      <polygon points="0,-16 -6,-6 6,-6" fill="#38bdf8" stroke="#ffffff" stroke-width="1"/>
+    </g>
+
+    <!-- Digital OLED Control Panel (Bottom Half) -->
+    <rect x="260" y="335" width="280" height="65" rx="10" fill="#020617" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- OLED Display Screen -->
+    <rect x="275" y="348" width="110" height="38" rx="6" fill="#090d16" stroke="#0284c7" stroke-width="1"/>
+    <text x="330" y="372" fill="#38bdf8" font-family="'Inter', monospace" font-weight="700" font-size="16" text-anchor="middle">42.0 kHz</text>
+
+    <!-- Start / Pause / Heating Buttons -->
+    <circle cx="430" cy="368" r="14" fill="#1e293b" stroke="#d4af37" stroke-width="1.5"/>
+    <polygon points="426,362 436,368 426,374" fill="#d4af37"/>
+
+    <circle cx="475" cy="368" r="14" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="470" y="363" width="10" height="10" rx="1" fill="#94a3b8"/>
+
+    <circle cx="515" cy="368" r="14" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+    <path d="M 510 373 C 510 365 520 365 520 363" fill="none" stroke="#ef4444" stroke-width="1.5"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="525" fill="#38bdf8" font-family="'Playfair Display', serif" font-weight="700" font-size="16" letter-spacing="4" text-anchor="middle">ULTRASONIC CAVITATION CLEANER</text>
+  <text x="400" y="542" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">42 KHZ PIEZOELECTRIC TRANSDUCER · STAINLESS STEEL DEGAS CHAMBER</text>
+</svg>

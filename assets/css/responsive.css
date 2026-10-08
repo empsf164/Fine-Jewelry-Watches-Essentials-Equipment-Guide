@@ -426,9 +426,105 @@
     height: 42px !important;
   }
 
-  .spec-sheet-grid,
-  .movement-specs-list {
-    grid-template-columns: 1fr;
+  /* Interactive Horology on Mobile View */
+  .movement-explorer-widget {
+    padding: 1.25rem !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .movement-tabs {
+    display: flex !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+    padding-bottom: 0.75rem !important;
+    margin-bottom: 1.5rem !important;
+    gap: 0.5rem !important;
+    scrollbar-width: thin !important;
+    width: 100% !important;
+  }
+
+  .movement-tab-btn {
+    flex-shrink: 0 !important;
+    padding: 0.6rem 1rem !important;
+    font-size: 0.75rem !important;
+  }
+
+  .movement-display-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.5rem !important;
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+
+  .movement-schematic-box {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 1.25rem 1rem !important;
+    overflow: hidden !important;
+  }
+
+  .movement-schematic-box svg {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 210px !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .movement-info-box {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .movement-specs-list,
+  .spec-sheet-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    width: 100% !important;
+  }
+
+  .movement-spec-item {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  .movement-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.75rem !important;
+  }
+
+  .movement-actions .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Contact Page FAQ Full Width on Mobile */
+  .contact-faq-section {
+    padding-top: 3rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .contact-faq-summary {
+    padding: 1.1rem 1.25rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .contact-faq-body {
+    padding: 0 1.25rem 1.25rem 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.65 !important;
   }
 
   .details-tabs {
@@ -469,12 +565,8 @@
     font-size: 0.65rem;
   }
 
-  .movement-explorer-widget {
-    padding: 1.25rem;
-  }
-
   .movement-schematic-box svg {
-    height: 200px;
+    max-height: 190px !important;
   }
 
   .search-modal {

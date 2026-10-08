@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#141a22"/>
+      <stop offset="60%" stop-color="#0b0e12"/>
+      <stop offset="100%" stop-color="#050709"/>
+    </radialGradient>
+    <radialGradient id="dialGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0f2b48"/>
+      <stop offset="70%" stop-color="#081422"/>
+      <stop offset="100%" stop-color="#03060a"/>
+    </radialGradient>
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1e24"/>
+      <stop offset="50%" stop-color="#0c0e11"/>
+      <stop offset="100%" stop-color="#1e242c"/>
+    </linearGradient>
+    <linearGradient id="steelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e2e8f0"/>
+      <stop offset="25%" stop-color="#94a3b8"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="75%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <filter id="lumeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle lighting flare -->
+  <circle cx="400" cy="300" r="280" fill="#1e3a5f" opacity="0.08" filter="blur(60px)"/>
+
+  <!-- Steel Bracelet Top & Bottom -->
+  <g filter="url(#dropShadow)">
+    <!-- Top Bracelet Links -->
+    <path d="M 330 110 L 470 110 L 455 180 L 345 180 Z" fill="url(#steelGrad)"/>
+    <line x1="375" y1="110" x2="375" y2="180" stroke="#475569" stroke-width="2"/>
+    <line x1="425" y1="110" x2="425" y2="180" stroke="#475569" stroke-width="2"/>
+    
+    <!-- Bottom Bracelet Links -->
+    <path d="M 345 420 L 455 420 L 470 490 L 330 490 Z" fill="url(#steelGrad)"/>
+    <line x1="375" y1="420" x2="375" y2="490" stroke="#475569" stroke-width="2"/>
+    <line x1="425" y1="420" x2="425" y2="490" stroke="#475569" stroke-width="2"/>
+
+    <!-- Case Lugs & Outer Body -->
+    <path d="M 315 140 L 350 180 C 320 230 320 370 350 420 L 315 460 C 290 400 290 200 315 140 Z" fill="url(#steelGrad)"/>
+    <path d="M 485 140 L 450 180 C 480 230 480 370 450 420 L 485 460 C 510 400 510 200 485 140 Z" fill="url(#steelGrad)"/>
+
+    <!-- Screw-down Crown & Crown Guards -->
+    <path d="M 525 285 L 545 285 L 545 315 L 525 315 Z" fill="url(#steelGrad)"/>
+    <path d="M 505 270 L 528 285 L 528 315 L 505 330 Z" fill="url(#steelGrad)"/>
+    
+    <!-- Outer Watch Case Rim -->
+    <circle cx="400" cy="300" r="170" fill="url(#steelGrad)"/>
+    <circle cx="400" cy="300" r="162" fill="#0b0e12"/>
+
+    <!-- Ceramic Dive Bezel -->
+    <circle cx="400" cy="300" r="156" fill="url(#bezelGrad)"/>
+    <circle cx="400" cy="300" r="156" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Bezel Markers & Numbers -->
+    <!-- 12 O'clock Triangle with Lume Pip -->
+    <polygon points="400,150 390,165 410,165" fill="#f8fafc"/>
+    <circle cx="400" cy="160" r="4" fill="#38bdf8" filter="url(#lumeGlow)"/>
+
+    <!-- Bezel 10, 20, 30, 40, 50 numerals -->
+    <text x="475" y="185" fill="#e2e8f0" font-family="'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle">10</text>
+    <text x="525" y="260" fill="#e2e8f0" font-family="'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle">20</text>
+    <text x="515" y="355" fill="#e2e8f0" font-family="'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle">30</text>
+    <text x="445" y="425" fill="#e2e8f0" font-family="'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle">40</text>
+    <text x="355" y="425" fill="#e2e8f0" font-family="'Inter', sans-serif" font-weight="700" font-size="16" text-anchor="middle">50</text>
+
+    <!-- Bezel Minute Hash Marks 0 to 15 -->
+    <circle cx="425" cy="154" r="2" fill="#e2e8f0"/>
+    <circle cx="445" cy="164" r="2" fill="#e2e8f0"/>
+    <circle cx="462" cy="178" r="2" fill="#e2e8f0"/>
+
+    <!-- Inner Steel Flange / Chapter Ring -->
+    <circle cx="400" cy="300" r="128" fill="none" stroke="#64748b" stroke-width="3"/>
+
+    <!-- Dial Face -->
+    <circle cx="400" cy="300" r="126" fill="url(#dialGrad)"/>
+
+    <!-- Dial Inscriptions -->
+    <text x="400" y="240" fill="#d4af37" font-family="'Playfair Display', serif" font-weight="700" font-size="14" letter-spacing="3" text-anchor="middle">AURELLE</text>
+    <text x="400" y="254" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="8" letter-spacing="2" text-anchor="middle">AUTOMATIC</text>
+    
+    <text x="400" y="360" fill="#38bdf8" font-family="'Inter', sans-serif" font-weight="600" font-size="9" letter-spacing="2" text-anchor="middle">DEEP-SEA 300M / 1000FT</text>
+    <text x="400" y="372" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="7.5" letter-spacing="1.5" text-anchor="middle">SUPERLATIVE CHRONOMETER</text>
+
+    <!-- Date Window at 3 O'clock with Cyclops Magnifier -->
+    <rect x="470" y="288" width="28" height="24" rx="3" fill="#0f172a" stroke="#d4af37" stroke-width="1.5"/>
+    <text x="484" y="305" fill="#f8fafc" font-family="'Inter', sans-serif" font-weight="700" font-size="13" text-anchor="middle">28</text>
+
+    <!-- Hour Markers with Luminous Aqua Glow -->
+    <!-- 12: Inverted Triangle -->
+    <polygon points="400,195 388,212 412,212" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <!-- 6 & 9: Batons -->
+    <rect x="393" y="385" width="14" height="22" rx="2" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <rect x="295" y="293" width="22" height="14" rx="2" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    
+    <!-- Circular Lume Markers for 1, 2, 4, 5, 7, 8, 10, 11 -->
+    <circle cx="452" cy="214" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="486" cy="248" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="486" cy="352" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="452" cy="386" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="348" cy="386" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="314" cy="352" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="314" cy="248" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+    <circle cx="348" cy="214" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" filter="url(#lumeGlow)"/>
+
+    <!-- Watch Hands -->
+    <!-- Hour Hand (Mercedes style) -->
+    <g transform="rotate(-65 400 300)">
+      <path d="M 396 300 L 396 230 L 392 230 C 388 230 385 220 400 210 C 415 220 412 230 408 230 L 404 230 L 404 300 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+      <circle cx="400" cy="222" r="6" fill="#38bdf8" filter="url(#lumeGlow)"/>
+    </g>
+
+    <!-- Minute Hand (Sword style) -->
+    <g transform="rotate(35 400 300)">
+      <path d="M 396 300 L 396 195 L 400 185 L 404 195 L 404 300 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+      <rect x="397" y="205" width="6" height="70" rx="1.5" fill="#38bdf8" filter="url(#lumeGlow)"/>
+    </g>
+
+    <!-- Seconds Hand (Cyan Sweep with Lume Dot) -->
+    <g transform="rotate(120 400 300)">
+      <line x1="400" y1="330" x2="400" y2="180" stroke="#00f2fe" stroke-width="2"/>
+      <circle cx="400" cy="210" r="5" fill="#38bdf8" stroke="#00f2fe" stroke-width="1.5" filter="url(#lumeGlow)"/>
+      <circle cx="400" cy="300" r="6" fill="#cbd5e1" stroke="#0f172a" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -62,7 +62,7 @@ const AURELLE_MOVEMENT_EXPLORER = (function () {
             </div>
           </div>
 
-          <div style="margin-top: 2rem; display: flex; gap: 1rem;">
+          <div class="movement-actions" style="margin-top: 2rem; display: flex; gap: 1rem;">
             <a href="discover.html?cat=watches" class="btn btn-outline btn-sm">Explore ${current.name.split(' ')[0]} Watches &rarr;</a>
           </div>
         </div>

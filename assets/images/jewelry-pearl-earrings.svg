@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgPearls" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#1c1613"/>
+      <stop offset="60%" stop-color="#0e0a08"/>
+      <stop offset="100%" stop-color="#030202"/>
+    </radialGradient>
+    <radialGradient id="goldenPearl1" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="25%" stop-color="#fef08a"/>
+      <stop offset="55%" stop-color="#eab308"/>
+      <stop offset="85%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </radialGradient>
+    <radialGradient id="pearlShine" cx="35%" cy="30%" r="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldEarring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe699"/>
+      <stop offset="35%" stop-color="#d4af37"/>
+      <stop offset="70%" stop-color="#b48c14"/>
+      <stop offset="100%" stop-color="#ffd966"/>
+    </linearGradient>
+    <radialGradient id="diaCluster" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#bae6fd"/>
+      <stop offset="100%" stop-color="#7dd3fc"/>
+    </radialGradient>
+    <filter id="pearlShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000000" flood-opacity="0.9"/>
+    </filter>
+    <filter id="sparkle" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Dark Velvet Background -->
+  <rect width="800" height="600" fill="url(#bgPearls)"/>
+
+  <!-- Warm Golden Bokeh Ambient Highlight -->
+  <circle cx="400" cy="300" r="280" fill="#eab308" opacity="0.05" filter="blur(70px)"/>
+
+  <g filter="url(#pearlShadow)">
+
+    <!-- LEFT EARRING -->
+    <g transform="translate(290, 80)">
+      <!-- Earring Post & Stud -->
+      <circle cx="0" cy="50" r="10" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2"/>
+
+      <!-- Marquise Diamond Leaves Cluster -->
+      <!-- Leaf 1 (Left) -->
+      <path d="M 0 55 C -25 75 -25 95 0 115 C 25 95 25 75 0 55 Z" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2" transform="rotate(-25 0 85)"/>
+      <!-- Leaf 2 (Right) -->
+      <path d="M 0 55 C -25 75 -25 95 0 115 C 25 95 25 75 0 55 Z" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2" transform="rotate(25 0 85)"/>
+      <!-- Leaf 3 (Center Down) -->
+      <path d="M 0 80 C -18 105 -18 130 0 155 C 18 130 18 105 0 80 Z" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2"/>
+
+      <!-- Diamond Accent Points -->
+      <circle cx="-16" cy="95" r="4" fill="#ffffff" filter="url(#sparkle)"/>
+      <circle cx="16" cy="95" r="4" fill="#ffffff" filter="url(#sparkle)"/>
+      <circle cx="0" cy="120" r="5" fill="#ffffff" filter="url(#sparkle)"/>
+
+      <!-- Gold Articulated Cap & Bail -->
+      <path d="M -18 165 C -18 152 18 152 18 165 C 18 175 -18 175 -18 165 Z" fill="url(#goldEarring)"/>
+      <path d="M -12 165 C -12 178 12 178 12 165 Z" fill="url(#goldEarring)"/>
+
+      <!-- Natural Golden South Sea Pearl (14mm Macro Spherical) -->
+      <circle cx="0" cy="245" r="82" fill="url(#goldenPearl1)"/>
+      <ellipse cx="-28" cy="215" rx="36" ry="24" fill="url(#pearlShine)" transform="rotate(-20 -28 215)"/>
+      <circle cx="-25" cy="210" r="10" fill="#ffffff" opacity="0.85" filter="url(#sparkle)"/>
+    </g>
+
+    <!-- RIGHT EARRING -->
+    <g transform="translate(510, 80)">
+      <!-- Earring Post & Stud -->
+      <circle cx="0" cy="50" r="10" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2"/>
+
+      <!-- Marquise Diamond Leaves Cluster -->
+      <path d="M 0 55 C -25 75 -25 95 0 115 C 25 95 25 75 0 55 Z" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2" transform="rotate(-25 0 85)"/>
+      <path d="M 0 55 C -25 75 -25 95 0 115 C 25 95 25 75 0 55 Z" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2" transform="rotate(25 0 85)"/>
+      <path d="M 0 80 C -18 105 -18 130 0 155 C 18 130 18 105 0 80 Z" fill="url(#diaCluster)" stroke="url(#goldEarring)" stroke-width="2"/>
+
+      <circle cx="-16" cy="95" r="4" fill="#ffffff" filter="url(#sparkle)"/>
+      <circle cx="16" cy="95" r="4" fill="#ffffff" filter="url(#sparkle)"/>
+      <circle cx="0" cy="120" r="5" fill="#ffffff" filter="url(#sparkle)"/>
+
+      <!-- Gold Cap & Bail -->
+      <path d="M -18 165 C -18 152 18 152 18 165 C 18 175 -18 175 -18 165 Z" fill="url(#goldEarring)"/>
+      <path d="M -12 165 C -12 178 12 178 12 165 Z" fill="url(#goldEarring)"/>
+
+      <!-- Natural Golden South Sea Pearl (14mm Macro Spherical) -->
+      <circle cx="0" cy="245" r="82" fill="url(#goldenPearl1)"/>
+      <ellipse cx="-28" cy="215" rx="36" ry="24" fill="url(#pearlShine)" transform="rotate(-20 -28 215)"/>
+      <circle cx="-25" cy="210" r="10" fill="#ffffff" opacity="0.85" filter="url(#sparkle)"/>
+    </g>
+
+  </g>
+
+  <!-- Typography Description -->
+  <text x="400" y="520" fill="#fef08a" font-family="'Playfair Display', serif" font-weight="700" font-size="16" letter-spacing="4" text-anchor="middle">AURA SOUTH SEA PEARLS</text>
+  <text x="400" y="538" fill="#a1a1aa" font-family="'Inter', sans-serif" font-size="9" letter-spacing="2" text-anchor="middle">14MM NATURAL CHAMPAGNE GOLD · MARQUISE DIAMONDS · 18K GOLD</text>
+</svg>
